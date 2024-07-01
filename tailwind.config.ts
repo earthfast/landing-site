@@ -29,6 +29,9 @@ const config: Config = {
       },
       fontSize: {
         xxs: '0.625rem',
+      },
+      maxWidth: {
+        wrapper: '75rem',
       }
     },
   },

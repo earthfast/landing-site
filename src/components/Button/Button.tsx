@@ -1,5 +1,6 @@
 import { tv } from "tailwind-variants";
 import cx from "classnames";
+import Link from "next/link";
 
 const buttonStyles = tv({
   base: "rounded-xl focus:outline-none focus:shadow-outline",
@@ -25,6 +26,7 @@ const buttonStyles = tv({
 type ButtonProps = {
   variant?: "primary" | "inverted" | "text";
   size?: "small" | "medium" | "large";
+  href?: string;
   children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -33,8 +35,20 @@ function Button({
   size = "medium",
   className,
   children,
+  href,
   ...props
 }: ButtonProps) {
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={cx(className, buttonStyles({ variant, size }))}
+      >
+        {children}
+      </Link>
+    );
+  }
+
   return (
     <button className={cx(className, buttonStyles({ variant, size }))} {...props}>
       {children}
