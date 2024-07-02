@@ -26,12 +26,12 @@ function Header() {
         <Button href="/" variant="text">
           Login
         </Button>
-        <Button href="/" variant="inverted" className="py-[0.625rem]">
+        <Button href="/" variant="inverted" className="leading-3 !py-3">
           Get Started
         </Button>
       </div>
       <button
-        className="sm:hidden text-gray-900 dark:text-white focus:outline-none"
+        className="md:hidden text-gray-900 dark:text-white focus:outline-none"
         onClick={() => {}}
       >
         <FiMenu className="h-6 w-6" />

@@ -42,7 +42,7 @@ function Button({
     return (
       <Link
         href={href}
-        className={cx(className, buttonStyles({ variant, size }))}
+        className={cx(buttonStyles({ variant, size }), className)}
       >
         {children}
       </Link>
@@ -50,7 +50,10 @@ function Button({
   }
 
   return (
-    <button className={cx(className, buttonStyles({ variant, size }))} {...props}>
+    <button
+      className={cx(buttonStyles({ variant, size }), className)}
+      {...props}
+    >
       {children}
     </button>
   );
