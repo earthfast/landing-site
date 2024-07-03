@@ -8,8 +8,8 @@ interface FeaturedRowProps {
 
 function FeaturedRow({ title, description, media }: FeaturedRowProps) {
   return (
-    <section className="flex flex-col lg:flex-row items-center px-5 lg:px-0 text-center lg:text-left">
-      <div className="max-w-[30.37rem] mx-auto">
+    <section className="flex flex-col lg:flex-row items-center px-5 lg:px-0 text-center lg:text-left justify-between">
+      <div className="max-w-[30.37rem]">
         <h2 className="text-title-light dark:text-title-dark mb-2 lg:mb-4 text-[1.625rem] sm:text-[2.5rem] font-semibold">
           {title}
         </h2>

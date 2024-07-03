@@ -6,7 +6,8 @@ const buttonStyles = tv({
   base: "rounded-xl focus:outline-none focus:shadow-outline",
   variants: {
     variant: {
-      primary: "bg-primary-light dark:bg-primary-dark text-white",
+      primary:
+        "bg-primary-light dark:bg-primary-dark text-white hover:bg-[#2577CC] transition-color duration-300",
       inverted:
         "bg-transparent text-primary-light dark:text-white border border-primary-light dark:border-white",
       text: "bg-transparent text-primary hover:underline",

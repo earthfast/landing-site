@@ -42,6 +42,8 @@ const config: Config = {
           "linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, white 100%);",
         "card-gradient":
           "linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 87, 255, 0.1) 100%);",
+        "hero-gradient":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(46, 147, 255, 0.1) 100%);",
       },
     },
   },
