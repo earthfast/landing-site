@@ -42,7 +42,7 @@ export const FEATURED_ROWS_INFO = [
   },
 ];
 
-export const FEATURED_CARD_INFO = [
+export const FEATURED_CARDS_INFO = [
   {
     id: "1",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
@@ -71,5 +71,50 @@ export const FEATURED_CARD_INFO = [
     title: "Grants",
     description: "The Sia Foundation welcomes contributors from all over the world to come and build on Sia through our Grants program.",
     imageSrc: "/grants.jpg",
+  },
+];
+
+export const FEATURED_MINI_CARDS_INFO = [
+  {
+    id: "1",
+    icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
+    title: "Completely Private",
+    description:
+      "Sia encrypts and distributes your files across a decentralized network. Unlike traditional cloud storage providers, you truly own your data: no third party can access your files or prevent you from accessing them.",
+  },
+  {
+    id: "2",
+    icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
+    title: "Highly Redundant",
+    description:
+      "Sia distributes and stores redundant file segments on nodes across the globe, eliminating any single point of failure and achieving uptime and throughput that no centralized provider can compete with.",
+  },
+  {
+    id: "3",
+    icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
+    title: "Far More Affordable",
+    description:
+      "On average, Sia's decentralized cloud storage costs 90% less than incumbent cloud storage providers. Storing 1 TB of files on Sia costs about $1-2 per month, compared with $23 on Amazon S3 - bandwidth is also a magnitude cheaper.",
+  },
+  {
+    id: "4",
+    icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
+    title: "Designed for integration",
+    description:
+      "The Sia software exposes highly modular JSON-speaking endpoints. renterd can even scale horizontally: in stateless mode, it provides raw access to the Sia renter-host protocol, with no UI, no blockchain, and no disk I/O — perfect for massive renting operations.",
+  },
+  {
+    id: "5",
+    icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
+    title: "R&D leader",
+    description:
+      "The Sia storage network has been securely storing data since 2014. Sia has pioneered the use of many new technologies at scale, such as its use of state channels to process an estimated 20 billion micropayments per day.",
+  },
+  {
+    id: "6",
+    icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
+    title: "Far More Affordable",
+    description:
+      "Sia's software is completely open source, with contributions from leading software engineers. Sia has a thriving community of developers and companies building innovative applications and businesses on top of Sia.",
   },
 ];
