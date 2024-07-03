@@ -118,3 +118,27 @@ export const FEATURED_MINI_CARDS_INFO = [
       "Sia's software is completely open source, with contributions from leading software engineers. Sia has a thriving community of developers and companies building innovative applications and businesses on top of Sia.",
   },
 ];
+
+export const TESTIMONIALS = [
+  {
+    company: "Audius",
+    logo: "/audius.png",
+    whiteLogo: "/audius-white.png",
+    quote:
+      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
+  },
+  {
+    company: "Synthetix",
+    logo: "/synthetix.png",
+    whiteLogo: "/synthetix.png",
+    quote:
+      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
+  },
+  {
+    company: "Thales",
+    logo: "/thales.png",
+    whiteLogo: "/thales-white.png",
+    quote:
+      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
+  },
+];

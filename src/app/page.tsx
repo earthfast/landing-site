@@ -2,6 +2,7 @@ import cx from "classnames";
 import { MainBanner } from "@/components/Banner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Slider from "@/components/Slider";
 import FeaturedRow from "@/components/FeaturedRow";
 import {
   FEATURED_CARDS_INFO,
@@ -44,7 +45,7 @@ export default function Home() {
           highlightedWord="EarthFast"
           description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
           content={
-            <>
+            <div className="mb-20">
               <div className="border-t-[1px] dark:border-t-white/[0.12] border-t-black/[0.1]">
                 <div className="grid grid-cols-1 lg:grid-cols-3 max-w-wrapper mx-auto px-4 xl:px-0">
                   {FEATURED_MINI_CARDS_INFO.slice(0, 3).map(
@@ -85,9 +86,10 @@ export default function Home() {
                   )}
                 </div>
               </div>
-            </>
+            </div>
           }
         />
+        <Slider />
         <Footer />
       </div>
     </main>
