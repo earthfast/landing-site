@@ -28,11 +28,19 @@ const config: Config = {
         },
       },
       fontSize: {
-        xxs: '0.625rem',
+        xxs: "0.625rem",
       },
       maxWidth: {
-        wrapper: '75rem',
-      }
+        wrapper: "75rem",
+      },
+      backgroundImage: {
+        "dark-mask":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, #334155 100%);",
+        "light-mask":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, #EBF1FF 100%);",
+        "card-gradient":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 87, 255, 0.1) 100%);",
+      },
     },
   },
   variants: {
