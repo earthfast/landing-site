@@ -1,6 +1,7 @@
 import cx from "classnames";
 import { MainBanner } from "@/components/Banner";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import FeaturedRow from "@/components/FeaturedRow";
 import {
   FEATURED_CARDS_INFO,
@@ -84,6 +85,7 @@ export default function Home() {
           </>
         }
       />
+      <Footer />
     </main>
   );
 }
