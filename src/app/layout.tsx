@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Earth Fast",
-  description: "Decentralize your frontend, securely.",
+  title: "Earth Fast - Decentralize your frontend, securely.",
+  description: "EarthFast is an infrastructure protocol that shifts the responsibility of updating, deploying and hosting your frontend to a community of voters.",
 };
 
 export default function RootLayout({
@@ -17,6 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={cx(
           inter.className,
