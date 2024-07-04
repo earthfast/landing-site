@@ -43,7 +43,7 @@ const config: Config = {
         "card-gradient":
           "linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 87, 255, 0.1) 100%);",
         "hero-gradient":
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0) 90%, rgba(46, 147, 255, 0.1) 100%);",
+          "linear-gradient(to bottom, rgba(216, 236, 251, 0.1) 50%, rgba(216, 236, 251, 0.7) 100%);",
       },
     },
   },

@@ -3,12 +3,15 @@ import Image from "next/image";
 import cx from 'classnames';
 import { Roboto_Mono } from "next/font/google";
 import Button from '@/components/Button';
+import './hero.css';
+
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 function Hero() {
   return (
-    <section className="text-center px-5 lg:px-0 bg-hero-gradient dark:bg-none">
-      <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[6.25rem] sm:pb-[10.31rem]">
+    <section className="text-center px-5 lg:px-0 relative overflow-hidden">
+      <PerspectiveGrid />
+      <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[6.25rem] sm:pb-[10.31rem] relative z-50">
         <div
           className={cx(
             robotoMono.className,
@@ -81,5 +84,38 @@ function Hero() {
     </section>
   );
 }
+
+const numColumns = 10;
+const numRows = 8;
+const totalCells = numColumns * numRows;
+
+function PerspectiveGrid() {
+  return (
+    <div className="absolute top-[-250px] bottom-0 left-0 right-0 bg-hero-gradient dark:bg-none h-screen flex items-center justify-center z-0">
+      <div className="perspective-grid__container">
+        <div className="perspective-grid">
+          {Array(totalCells)
+            .fill(null)
+            .map((_, i) => {
+              const column = i % numColumns;
+              const shouldHaveRay = column < 3 || column > 6; // Omit middle columns
+
+              return (
+                <div
+                  key={i}
+                  className={
+                    shouldHaveRay && Math.floor(i / numColumns) === 1
+                      ? "relative border-[1px] border-[#BBD4F1]/[0.3] dark:border-[#BBD4F1]/[0.1] perspective-grid__cell-rays"
+                      : "relative border-[1px] border-[#BBD4F1]/[0.3] dark:border-[#BBD4F1]/[0.1]"
+                  }
+                ></div>
+              );
+            })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 
 export default Hero

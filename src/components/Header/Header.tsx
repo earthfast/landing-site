@@ -22,7 +22,7 @@ function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="py-4 px-5 lg:px-0 max-w-wrapper mx-auto flex justify-between items-center absolute left-0 top-0 right-0">
+    <header className="py-4 px-5 lg:px-0 max-w-wrapper mx-auto flex justify-between items-center absolute left-0 top-0 right-0 z-50">
       <Link href="/" className="flex items-center gap-3">
         <Image width={37} height={40} src="/logo.svg" alt="Earth fast logo" />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
