@@ -9,7 +9,7 @@ const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 function Hero() {
   return (
-    <section className="text-center px-5 lg:px-0 relative overflow-hidden">
+    <section className="text-center px-5 lg:px-0 relative overflow-hidden z-30">
       <PerspectiveGrid />
       <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[6.25rem] sm:pb-[10.31rem] relative z-50">
         <div
