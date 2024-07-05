@@ -17,7 +17,10 @@ function FeaturedRow({ title, description, media }: FeaturedRowProps) {
           {description}
         </p>
       </div>
-      {media}
+      <div className="relative">
+        <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full" />
+        {media}
+      </div>
     </section>
   );
 }

@@ -16,7 +16,7 @@ const config: Config = {
         },
         background: {
           light: "#ffffff",
-          dark: "#1E1E1E",
+          dark: "#01131F",
         },
         title: {
           light: "#002C53",
@@ -26,6 +26,7 @@ const config: Config = {
           light: "rgba(0, 44, 83, 0.7)",
           dark: "rgba(255, 255, 255, 0.7)",
         },
+        "gradient-color": "rgba(46, 147, 255, 0.32)",
       },
       fontSize: {
         xxs: "0.625rem",
@@ -44,6 +45,7 @@ const config: Config = {
           "linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 87, 255, 0.1) 100%);",
         "hero-gradient":
           "linear-gradient(to bottom, rgba(216, 236, 251, 0.1) 50%, rgba(216, 236, 251, 0.7) 100%);",
+        "custom-radial": "radial-gradient(at center, #2E93FF 32%, 01131F 32%)",
       },
     },
   },

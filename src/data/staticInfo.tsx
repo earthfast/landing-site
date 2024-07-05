@@ -40,6 +40,13 @@ export const FEATURED_ROWS_INFO = [
       "The usability and performance of web2, with the decentralization guarantees of web3.",
     media: <Image alt="Fast" src="/easy-code.png" width={588} height={430} />,
   },
+  {
+    id: "5",
+    title: "wahtevfef",
+    description:
+      "The sddsasd and performance of web2, with the decentralization guarantees of web3.",
+    media: <Image alt="Fast" src="/easy-code.png" width={588} height={430} />,
+  },
 ];
 
 export const FEATURED_CARDS_INFO = [

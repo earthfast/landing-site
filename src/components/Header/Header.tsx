@@ -28,13 +28,13 @@ function Header() {
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
       <nav className="hidden md:flex gap-14">
-        <Link href="/page1" className="text-title-light dark:text-title-dark">
+        <Link href="/" className="text-title-light dark:text-title-dark">
           Solution
         </Link>
-        <Link href="/page2" className="text-title-light dark:text-title-dark">
+        <Link href="/" className="text-title-light dark:text-title-dark">
           Resource
         </Link>
-        <Link href="/page3" className="text-title-light dark:text-title-dark">
+        <Link href="/" className="text-title-light dark:text-title-dark">
           Company
         </Link>
       </nav>
@@ -74,19 +74,19 @@ function Header() {
         </button>
         <nav className="flex flex-col items-center space-y-4 mt-16">
           <Link
-            href="/page1"
+            href="/"
             className="text-title-light dark:text-title-dark text-lg"
           >
             Solution
           </Link>
           <Link
-            href="/page2"
+            href="/"
             className="text-title-light dark:text-title-dark text-lg"
           >
             Resource
           </Link>
           <Link
-            href="/page3"
+            href="/"
             className="text-title-light dark:text-title-dark text-lg"
           >
             Company

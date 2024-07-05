@@ -14,7 +14,8 @@ function SectionContainer({
   const formattedTitle = formatTitle({ title, highlightedWord });
   return (
     <section className="sm:pt-28 pt-20">
-      <div className="px-5 sm:px-0">
+      <div className="px-5 sm:px-0 relative">
+        <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-1/2" />
         <h2 className="text-3xl sm:text-5xl text-center mb-2 sm:mb-4 font-semibold">
           {formattedTitle}
         </h2>
