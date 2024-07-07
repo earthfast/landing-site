@@ -1,3 +1,4 @@
+import ProgressCard from "@/components/ProgressCard";
 import Image from "next/image";
 import { BsDatabaseFillCheck } from "react-icons/bs";
 import { FaCloudBolt } from "react-icons/fa6";
@@ -13,7 +14,7 @@ export const FEATURED_ROWS_INFO = [
     media: (
       <Image
         alt="Decentralized"
-        src="/easy-code.png"
+        src="/decentralized.png"
         width={588}
         height={430}
       />
@@ -31,21 +32,32 @@ export const FEATURED_ROWS_INFO = [
     title: "Secure",
     description:
       "EarthFast's secure enclave architecture ensures that users are protected from attacks and that they are always receiving the correct version of a project's frontend.",
-    media: <Image alt="Secure" src="/easy-code.png" width={588} height={430} />,
+    media: (
+      <>
+        <Image alt="Secure" src="/secure.png" width={588} height={430} className="hidden dark:block" />
+        <Image alt="Secure" src="/secure-white.png" width={588} height={430} className="dark:hidden block" />
+      </>
+    ),
   },
   {
     id: "4",
     title: "Fast",
     description:
       "The usability and performance of web2, with the decentralization guarantees of web3.",
-    media: <Image alt="Fast" src="/easy-code.png" width={588} height={430} />,
-  },
-  {
-    id: "5",
-    title: "wahtevfef",
-    description:
-      "The sddsasd and performance of web2, with the decentralization guarantees of web3.",
-    media: <Image alt="Fast" src="/easy-code.png" width={588} height={430} />,
+    media: (
+      <div
+        className="flex flex-col gap-4 w-full"
+        style={{ alignItems: "flex-end" }}
+      >
+        <ProgressCard progress={100} label="44s*" logoSrc="/ipfs.png" />
+        <ProgressCard
+          progress={25}
+          title="Armada"
+          label="<1s"
+          barColor="#FFB341"
+        />
+      </div>
+    ),
   },
 ];
 
