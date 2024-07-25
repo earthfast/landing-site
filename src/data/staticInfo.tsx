@@ -14,18 +14,24 @@ export const FEATURED_ROWS_INFO = [
     media: (
       <Image
         alt="Decentralized"
-        src="/decentralized.png"
-        width={588}
-        height={430}
+        src="/decentralized.svg"
+        width={400}
+        height={400}
       />
     ),
+    inverted: false,
+    ctaText: "Decentralized CTA",
+    ctaLink: "https://",
   },
   {
     id: "2",
     title: "Easy",
     description:
       "For most projects, packaging your frontend for the EarthFast network is as simple as running one command.",
-    media: <Image alt="Easy" src="/easy-code.png" width={588} height={430} />,
+    media: <Image alt="Easy" src="/easy-code.svg" width={480} height={400} />,
+    inverted: true,
+    ctaText: "Easy CTA",
+    ctaLink: "https://",
   },
   {
     id: "3",
@@ -34,10 +40,25 @@ export const FEATURED_ROWS_INFO = [
       "EarthFast's secure enclave architecture ensures that users are protected from attacks and that they are always receiving the correct version of a project's frontend.",
     media: (
       <>
-        <Image alt="Secure" src="/secure.png" width={588} height={430} className="hidden dark:block" />
-        <Image alt="Secure" src="/secure-white.png" width={588} height={430} className="dark:hidden block" />
+        <Image
+          alt="Secure"
+          src="/secure.svg"
+          width={450}
+          height={400}
+          className="hidden dark:block"
+        />
+        <Image
+          alt="Secure"
+          src="/secure-white.svg"
+          width={450}
+          height={400}
+          className="dark:hidden block"
+        />
       </>
     ),
+    inverted: false,
+    ctaText: "Secure CTA",
+    ctaLink: "https://",
   },
   {
     id: "4",
@@ -45,10 +66,7 @@ export const FEATURED_ROWS_INFO = [
     description:
       "The usability and performance of web2, with the decentralization guarantees of web3.",
     media: (
-      <div
-        className="flex flex-col gap-4 w-full"
-        style={{ alignItems: "flex-end" }}
-      >
+      <>
         <ProgressCard progress={100} label="44s*" logoSrc="/ipfs.png" />
         <ProgressCard
           progress={25}
@@ -56,8 +74,11 @@ export const FEATURED_ROWS_INFO = [
           label="<1s"
           barColor="#FFB341"
         />
-      </div>
+      </>
     ),
+    ctaText: "Fast CTA",
+    ctaLink: "https://",
+    inverted: true,
   },
 ];
 

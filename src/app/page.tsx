@@ -5,14 +5,13 @@ import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
 import FeaturedRow from "@/components/FeaturedRow";
 import {
-  FEATURED_CARDS_INFO,
   FEATURED_MINI_CARDS_INFO,
   FEATURED_ROWS_INFO,
 } from "@/data/staticInfo";
 import SectionContainer from "@/components/SectionContainer";
-import FeaturedCard from "@/components/FeaturedCard";
 import FeaturedMiniCard from "@/components/FeaturedMiniCard";
 import Hero from "@/components/Hero";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -21,12 +20,12 @@ export default function Home() {
       <div className="relative">
         <Header />
         <Hero />
-        <div className="max-w-wrapper mx-auto flex gap-28 flex-col">
+        <div className="max-w-wrapper mx-auto flex flex-col mt-2 mb-12 gap-16">
           {FEATURED_ROWS_INFO.map(({ id, ...rest }) => (
             <FeaturedRow key={id} {...rest} />
           ))}
         </div>
-        <SectionContainer
+        {/* <SectionContainer
           title="Learn how Sia works"
           highlightedWord="Sia"
           description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
@@ -39,13 +38,13 @@ export default function Home() {
               ))}
             </div>
           }
-        />
+        /> */}
         <SectionContainer
           title="Why projects choose EarthFast"
           highlightedWord="EarthFast"
           description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
           content={
-            <div className="mb-20">
+            <>
               <div className="border-t-[1px] dark:border-t-white/[0.12] border-t-black/[0.1]">
                 <div className="grid grid-cols-1 lg:grid-cols-3 max-w-wrapper mx-auto px-4 xl:px-0">
                   {FEATURED_MINI_CARDS_INFO.slice(0, 3).map(
@@ -86,6 +85,19 @@ export default function Home() {
                   )}
                 </div>
               </div>
+            </>
+          }
+        />
+        <SectionContainer
+          title="Ready to try EarthFast ?"
+          highlightedWord="EarthFast"
+          description="Deploy a site in 90 seconds"
+          content={
+            <div className="flex gap-4 justify-center mb-20">
+              <Button className="px-7">Get Started</Button>
+              <Button className="px-7" variant="inverted">
+                View Docs
+              </Button>
             </div>
           }
         />

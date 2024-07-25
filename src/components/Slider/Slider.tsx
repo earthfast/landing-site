@@ -27,9 +27,9 @@ const Slider = () => {
   const sliderRef = useRef<SlickSlider>(null);
 
   return (
-    <div className="slider bg-gradient-to-b dark:from-[#2E93FF] dark:to-[#007DD8] from-[#2E93FF]/[0.3] to-[#2E93FF] rounded-lg max-w-[87rem] sm:mx-auto px-5 pt-8 pb-10 sm:pt-16 sm:px-12 sm:pb-14 relative mx-3">
-      <div className="flex flex-col md:flex-row items-start justify-between">
-        <div className="mb-10 sm:mb-0">
+    <div className="slider bg-gradient-to-b dark:from-[#2E93FF] dark:to-[#007DD8] from-[#2E93FF]/[0.3] to-[#2E93FF] rounded-lg max-w-[87rem] lg:mx-auto px-5 pt-8 pb-10 sm:pt-16 sm:px-12 sm:pb-14 relative sm:mx-5 mx-3">
+      <div className="flex flex-col lg:flex-row items-start justify-between">
+        <div className="mb-10 lg:mb-0">
           <h2
             className={cx(
               robotoMono.className,
@@ -75,7 +75,7 @@ const Slider = () => {
           ))}
         </SlickSlider>
       </div>
-      <div className="flex justify-center md:justify-start sm:absolute sm:bottom-8 sm:left-6 gap-2 mt-6 sm:mt-0">
+      <div className="flex justify-center md:justify-start lg:absolute lg:bottom-8 md:left-6 gap-2 mt-6 lg:mt-0">
         <button onClick={() => sliderRef?.current?.slickPrev()}>
           <LiaChevronCircleLeftSolid size={44} color="black" />
         </button>

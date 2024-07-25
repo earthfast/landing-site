@@ -24,7 +24,7 @@
   width: 2px;
   height: 350%;
   background: linear-gradient(to top, rgba(0, 87, 255, 0.1), rgba(0, 87, 255, 0.8)); /* Gradiente azul */
-  animation: rays 4s linear infinite;
+  animation: rays 2.5s linear infinite;
   transform: translateX(-50%);
 }
 
