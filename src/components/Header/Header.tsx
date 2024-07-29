@@ -24,7 +24,8 @@ function Header() {
   return (
     <header className="py-4 px-5 lg:px-0 max-w-wrapper mx-auto flex justify-between items-center absolute left-0 top-0 right-0 z-50">
       <Link href="/" className="flex items-center gap-3">
-        <Image width={37} height={40} src="/logo.svg" alt="Earth fast logo" />
+        <Image width={36} height={36} src="/logo.svg" alt="Earth fast logo" className="dark:hidden" />
+        <Image width={36} height={36} src="/dark-logo.svg" alt="Earth fast logo" className="hidden dark:block" />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
       <nav className="hidden md:flex gap-14">
