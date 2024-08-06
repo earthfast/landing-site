@@ -92,7 +92,7 @@ const totalCells = numColumns * numRows;
 
 function PerspectiveGrid() {
   return (
-    <div className="absolute top-[-250px] bottom-0 left-0 right-0 bg-hero-gradient dark:bg-none h-screen flex items-center justify-center z-0">
+    <div className="absolute top-[-250px] bottom-0 left-0 right-0 bg-hero-gradient dark:bg-none flex items-center justify-center z-0">
       <div className="perspective-grid__container">
         <div className="perspective-grid">
           {Array(totalCells)

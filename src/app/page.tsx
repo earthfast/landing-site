@@ -20,7 +20,7 @@ export default function Home() {
       <div className="relative">
         <Header />
         <Hero />
-        <div className="max-w-wrapper mx-auto flex flex-col mt-2 mb-12 gap-16">
+        <div className="max-w-wrapper mx-auto flex flex-col mt-10 mb-12 gap-16">
           {FEATURED_ROWS_INFO.map(({ id, ...rest }) => (
             <FeaturedRow key={id} {...rest} />
           ))}
