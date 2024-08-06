@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           }
         /> */}
-        <SectionContainer
+        {/* <SectionContainer
           title="Why projects choose EarthFast"
           highlightedWord="EarthFast"
           description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             </>
           }
-        />
+        /> */}
         <SectionContainer
           title="Ready to try EarthFast ?"
           highlightedWord="EarthFast"
