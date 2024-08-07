@@ -12,7 +12,7 @@
   grid-template-rows: repeat(10, 1fr);
   width: 100%;
   height: 100%;
-  transform: rotateX(60deg) translateY(20%);
+  transform: rotateX(60deg) translateY(24.2%);
 }
 
 .perspective-grid__cell-rays::before {
@@ -23,16 +23,18 @@
   left: -3px;
   width: 2px;
   height: 350%;
-  background: linear-gradient(to top, rgba(0, 87, 255, 0.1), rgba(0, 87, 255, 0.8)); /* Gradiente azul */
-  animation: rays 2.5s linear infinite;
+  background: linear-gradient(to top, rgba(0, 87, 255, 0.1), rgba(0, 87, 255, 0.8));
+  animation: rays 4.5s linear infinite;
   transform: translateX(-50%);
 }
 
 @keyframes rays {
   0% {
-    transform: translateY(100%);
+    opacity: 1;
+    transform: translateY(250%);
   }
   100% {
+    opacity: 0;
     transform: translateY(-100%);
   }
 }
