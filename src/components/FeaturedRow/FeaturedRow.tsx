@@ -33,7 +33,7 @@ function FeaturedRow({
           {description}
         </p>
         {ctaText && (
-          <Button size="small" href={ctaLink} className="px-5 py-3">
+          <Button size="small" href={ctaLink} className="px-5 py-3 font-bold">
             {ctaText}
           </Button>
         )}
