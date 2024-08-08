@@ -48,6 +48,8 @@ const VerticalSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     beforeChange: (_: number, next: number) => setCurrentSlide(next),
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
