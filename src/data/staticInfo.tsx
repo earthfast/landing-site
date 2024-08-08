@@ -50,7 +50,12 @@ export const FEATURED_ROWS_INFO = [
         <Button size="small" href="https://" className="px-5 py-3 font-bold">
           Easy CTA
         </Button>
-        <Button size="small" href="https://" className="px-5 py-3 font-bold" variant="inverted">
+        <Button
+          size="small"
+          href="https://"
+          className="px-5 py-3 font-bold"
+          variant="inverted"
+        >
           Second CTA
         </Button>
       </div>
@@ -93,29 +98,32 @@ export const FEATURED_ROWS_INFO = [
       "The usability and performance of web2, with the decentralization guarantees of web3.",
     media: (
       <>
-        <div className="block dark:hidden w-full">
-          <ProgressCard
-            progress={25}
-            title="EarthFast"
-            label="<1s"
-            barColor="#FFB341"
-            logoSrc="/white-logo.svg"
-            logoWidth={29}
-            logoHeight={29}
-          />
-        </div>
-        <div className="dark:block hidden w-full">
-          <ProgressCard
-            progress={25}
-            title="EarthFast"
-            label="<1s"
-            barColor="#FFFFFF"
-            logoSrc="/white-logo.svg"
-            logoWidth={29}
-            logoHeight={29}
-          />
-        </div>
-        <ProgressCard progress={100} label="44s*" logoSrc="/ipfs.png" />
+        <ProgressCard
+          progress={25}
+          title="EarthFast"
+          label="<1s"
+          barColor="#FFFFFF"
+          logoSrc="/white-logo.svg"
+          logoWidth={27}
+          logoHeight={27}
+        />
+        <ProgressCard
+          progress={100}
+          label="44s*"
+          logoSrc="/ipfs.svg"
+          title="IPFS"
+        />
+        <p className="text-xs text-gray-400">
+          *Source:{" "}
+          <a
+            href="https://blog.cloudflare.com/ipfs-measurements"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Cloudflare IPFS Measurements
+          </a>
+        </p>
       </>
     ),
     cta: (

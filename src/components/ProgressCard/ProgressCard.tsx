@@ -16,12 +16,12 @@ const ProgressCard: React.FC<ProgressCardProps> = ({
   logoSrc,
   title,
   barColor,
-  logoWidth = 68,
-  logoHeight = 34,
+  logoWidth = 29,
+  logoHeight = 29,
 }) => {
   return (
     <div className="flex flex-col items-center bg-[#2E93FF] dark:bg-[#2E93FF]/[0.12] w-full p-4 rounded-xl border-[1px] dark:border-white/[0.12] max-w-[30.5rem]">
-      <div className="py-3 px-4 bg-white/[0.16] rounded-xl border-[1px] border-[#F5F5F5]/[0.1] mb-4 sm:mb-6 shadow-lg flex items-center justify-between gap-2">
+      <div className="py-3 px-4 bg-white/[0.16] rounded-xl border-[1px] border-[#F5F5F5]/[0.1] mb-4 sm:mb-6 shadow-lg flex items-center justify-center gap-2 min-w-[9.375rem]">
         {(!!logoSrc || !!title) && (
           <>
             {!!logoSrc && (

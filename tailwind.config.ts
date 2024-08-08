@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/data/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "media",
   theme: {
@@ -27,6 +28,7 @@ const config: Config = {
           dark: "rgba(255, 255, 255, 0.7)",
         },
         "gradient-color": "rgba(46, 147, 255, 0.32)",
+        "gradient-color-light": "rgba(46, 147, 255, 0.2)",
       },
       fontSize: {
         xxs: "0.625rem",
