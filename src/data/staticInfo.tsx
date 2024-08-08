@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import ProgressCard from "@/components/ProgressCard";
 import VerticalSlider from "@/components/VerticalSlider/VerticalSlider";
 import Image from "next/image";
@@ -31,8 +32,11 @@ export const FEATURED_ROWS_INFO = [
       </>
     ),
     inverted: false,
-    ctaText: "Decentralized CTA",
-    ctaLink: "https://",
+    cta: (
+      <Button size="small" href="https://" className="px-5 py-3 font-bold">
+        Decentralized CTA
+      </Button>
+    ),
   },
   {
     id: "2",
@@ -41,8 +45,16 @@ export const FEATURED_ROWS_INFO = [
       "For most projects, packaging your frontend for the EarthFast network is as simple as running one command.",
     media: <VerticalSlider />,
     inverted: true,
-    ctaText: "Easy CTA",
-    ctaLink: "https://",
+    cta: (
+      <div className="flex gap-2">
+        <Button size="small" href="https://" className="px-5 py-3 font-bold">
+          Easy CTA
+        </Button>
+        <Button size="small" href="https://" className="px-5 py-3 font-bold" variant="inverted">
+          Second CTA
+        </Button>
+      </div>
+    ),
   },
   {
     id: "3",
@@ -68,8 +80,11 @@ export const FEATURED_ROWS_INFO = [
       </>
     ),
     inverted: false,
-    ctaText: "Secure CTA",
-    ctaLink: "https://",
+    cta: (
+      <Button size="small" href="https://" className="px-5 py-3 font-bold">
+        Secure CTA
+      </Button>
+    ),
   },
   {
     id: "4",
@@ -103,8 +118,11 @@ export const FEATURED_ROWS_INFO = [
         <ProgressCard progress={100} label="44s*" logoSrc="/ipfs.png" />
       </>
     ),
-    ctaText: "Fast CTA",
-    ctaLink: "https://",
+    cta: (
+      <Button size="small" href="https://" className="px-5 py-3 font-bold">
+        Fast CTA
+      </Button>
+    ),
     inverted: true,
   },
 ];
