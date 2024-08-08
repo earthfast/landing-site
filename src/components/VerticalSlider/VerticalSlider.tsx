@@ -86,7 +86,7 @@ const VerticalSlider = () => {
 
   return (
     <div
-      className="relative h-[170px] max-w-[560px] overflow-hidden w-full"
+      className="relative h-[220px] max-w-[560px] overflow-hidden w-full"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
     >
@@ -94,7 +94,7 @@ const VerticalSlider = () => {
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className="flex items-center justify-center h-[180px] w-full pb-5"
+            className="flex items-center justify-center h-[220px] w-full pb-5"
           >
             {slide.content}
           </div>
