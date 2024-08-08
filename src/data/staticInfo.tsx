@@ -1,4 +1,5 @@
 import ProgressCard from "@/components/ProgressCard";
+import VerticalSlider from "@/components/VerticalSlider/VerticalSlider";
 import Image from "next/image";
 import { BsDatabaseFillCheck } from "react-icons/bs";
 import { FaCloudBolt } from "react-icons/fa6";
@@ -12,12 +13,22 @@ export const FEATURED_ROWS_INFO = [
     description:
       "Replace your centralized frontend hosting with community governance and a global network of node operators.",
     media: (
-      <Image
-        alt="Decentralized"
-        src="/decentralized.svg"
-        width={400}
-        height={400}
-      />
+      <>
+        <Image
+          alt="Decentralized"
+          src="/decentralized-dark.png"
+          width={400}
+          height={400}
+          className="hidden dark:block"
+        />
+        <Image
+          alt="Decentralized"
+          src="/decentralized.png"
+          width={400}
+          height={400}
+          className="dark:hidden block"
+        />
+      </>
     ),
     inverted: false,
     ctaText: "Decentralized CTA",
@@ -28,7 +39,7 @@ export const FEATURED_ROWS_INFO = [
     title: "Easy",
     description:
       "For most projects, packaging your frontend for the EarthFast network is as simple as running one command.",
-    media: <Image alt="Easy" src="/easy-code.svg" width={480} height={400} />,
+    media: <VerticalSlider />,
     inverted: true,
     ctaText: "Easy CTA",
     ctaLink: "https://",
@@ -42,14 +53,14 @@ export const FEATURED_ROWS_INFO = [
       <>
         <Image
           alt="Secure"
-          src="/secure.svg"
+          src="/secure.png"
           width={450}
           height={400}
           className="hidden dark:block"
         />
         <Image
           alt="Secure"
-          src="/secure-white.svg"
+          src="/secure-white.png"
           width={450}
           height={400}
           className="dark:hidden block"
@@ -67,13 +78,29 @@ export const FEATURED_ROWS_INFO = [
       "The usability and performance of web2, with the decentralization guarantees of web3.",
     media: (
       <>
+        <div className="block dark:hidden w-full">
+          <ProgressCard
+            progress={25}
+            title="EarthFast"
+            label="<1s"
+            barColor="#FFB341"
+            logoSrc="/white-logo.svg"
+            logoWidth={29}
+            logoHeight={29}
+          />
+        </div>
+        <div className="dark:block hidden w-full">
+          <ProgressCard
+            progress={25}
+            title="EarthFast"
+            label="<1s"
+            barColor="#FFFFFF"
+            logoSrc="/white-logo.svg"
+            logoWidth={29}
+            logoHeight={29}
+          />
+        </div>
         <ProgressCard progress={100} label="44s*" logoSrc="/ipfs.png" />
-        <ProgressCard
-          progress={25}
-          title="Armada"
-          label="<1s"
-          barColor="#FFB341"
-        />
       </>
     ),
     ctaText: "Fast CTA",

@@ -44,7 +44,15 @@ function FeaturedRow({
           inverted ? "lg:items-start" : "lg:items-end"
         )}
       >
-        <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full" />
+        <div
+          className={cx(
+            "hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-x-1/4  -translate-y-1/2 h-full w-1/2",
+            (cx(
+              "hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-y-1/2 h-full w-1/2"
+            ),
+            inverted ? "-translate-x-2/4" : "-translate-x-1/2")
+          )}
+        />
         {media}
       </div>
     </section>

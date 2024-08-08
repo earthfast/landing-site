@@ -1,15 +1,10 @@
-import cx from "classnames";
 import { MainBanner } from "@/components/Banner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
 import FeaturedRow from "@/components/FeaturedRow";
-import {
-  FEATURED_MINI_CARDS_INFO,
-  FEATURED_ROWS_INFO,
-} from "@/data/staticInfo";
+import { FEATURED_ROWS_INFO } from "@/data/staticInfo";
 import SectionContainer from "@/components/SectionContainer";
-import FeaturedMiniCard from "@/components/FeaturedMiniCard";
 import Hero from "@/components/Hero";
 import Button from "@/components/Button";
 
