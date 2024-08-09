@@ -27,16 +27,16 @@ function Header() {
         <Image
           width={36}
           height={36}
-          src="/logo.svg"
+          src="/dark-logo.svg"
           alt="Earth fast logo"
-          className="dark:hidden w-6 h-6 sm:w-9 sm:h-9"
+          className="hidden dark:block w-6 h-6 sm:w-9 sm:h-9"
         />
         <Image
           width={36}
           height={36}
-          src="/dark-logo.svg"
+          src="/logo.svg"
           alt="Earth fast logo"
-          className="hidden dark:block w-6 h-6 sm:w-9 sm:h-9"
+          className="dark:hidden w-6 h-6 sm:w-9 sm:h-9"
         />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
@@ -79,16 +79,16 @@ function Header() {
           <Image
             width={36}
             height={36}
-            src="/logo.svg"
+            src="/dark-logo.svg"
             alt="Earth fast logo"
-            className="dark:hidden w-6 h-6 sm:w-9 sm:h-9"
+            className="hidden dark:block w-6 h-6 sm:w-9 sm:h-9"
           />
           <Image
             width={36}
             height={36}
-            src="/dark-logo.svg"
+            src="/logo.svg"
             alt="Earth fast logo"
-            className="hidden dark:block w-6 h-6 sm:w-9 sm:h-9"
+            className="dark:hidden w-6 h-6 sm:w-9 sm:h-9"
           />
           <h1 className="font-bold text-lg sm:text-2xl">EarthFast</h1>
         </Link>
