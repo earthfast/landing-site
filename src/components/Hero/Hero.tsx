@@ -12,7 +12,7 @@ function Hero() {
     <section className="text-center px-5 lg:px-0 relative overflow-hidden z-30">
       <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-[-50%] left-1/2 transform -translate-x-1/2 h-[37.18rem] w-[50rem]" />
       <PerspectiveGrid />
-      <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[6.25rem] sm:pb-[10.31rem] relative z-50">
+      <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[2.25rem] sm:pb-[10.31rem] relative z-50">
         <div
           className={cx(
             robotoMono.className,

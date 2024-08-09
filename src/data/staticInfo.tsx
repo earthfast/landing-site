@@ -20,14 +20,14 @@ export const FEATURED_ROWS_INFO = [
           src="/decentralized-dark.png"
           width={400}
           height={400}
-          className="hidden dark:block"
+          className="hidden dark:block max-w-[270px] sm:max-w-[400px] mt-10 sm:mt-0"
         />
         <Image
           alt="Decentralized"
           src="/decentralized.png"
           width={400}
           height={400}
-          className="dark:hidden block"
+          className="dark:hidden block max-w-[270px] sm:max-w-[400px] mt-10 sm:mt-0"
         />
       </>
     ),
@@ -46,7 +46,7 @@ export const FEATURED_ROWS_INFO = [
     media: <VerticalSlider />,
     inverted: true,
     cta: (
-      <div className="flex gap-2">
+      <div className="flex gap-2 justify-center sm:justify-start">
         <Button size="small" href="https://" className="px-5 py-3 font-bold">
           Easy CTA
         </Button>
