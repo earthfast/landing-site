@@ -10,12 +10,12 @@ const slides = [
   {
     id: 1,
     content: (
-      <div className="dark:bg-primary-dark/[0.16] bg-primary-light/[0.72] max-w-[538px] h-full w-full rounded-2xl border-2 border-primary-dark/[0.72] p-10 flex flex-col gap-4 justify-center">
-        <div className="text-white text-2xl flex items-center gap-1">
+      <div className="dark:bg-primary-dark/[0.16] bg-primary-light/[0.72] w-[94%] max-w-[538px] h-full md:w-full rounded-2xl border-2 border-primary-dark/[0.72] p-5 md:p-10 flex flex-col gap-4 justify-center">
+        <div className="text-white md:text-2xl flex items-center gap-1">
           <MdOutlineAttachMoney size={30} />
           npm run build
         </div>
-        <div className="text-white text-2xl flex items-center gap-1">
+        <div className="text-white md:text-2xl flex items-center gap-1 text-left">
           <MdOutlineAttachMoney size={30} />
           npx armada-cli bundle create
         </div>
@@ -28,6 +28,7 @@ const slides = [
       <Image
         alt="Earthfast Dashboard"
         src="/project-setup.png"
+        className="w-[94%] max-w-[538px] h-full md:w-full"
         width={538}
         height={128}
       />
@@ -86,7 +87,7 @@ const VerticalSlider = () => {
 
   return (
     <div
-      className="relative h-[220px] max-w-[560px] overflow-hidden w-full"
+      className="relative h-[150px] md:h-[220px] max-w-[560px] overflow-hidden w-full"
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
     >
@@ -94,7 +95,7 @@ const VerticalSlider = () => {
         {slides.map((slide) => (
           <div
             key={slide.id}
-            className="flex items-center justify-center h-[220px] w-full pb-5"
+            className="flex items-center justify-center md:h-[220px] h-[150px] w-full pb-5"
           >
             {slide.content}
           </div>
