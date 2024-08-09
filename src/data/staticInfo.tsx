@@ -1,4 +1,6 @@
+import Button from "@/components/Button";
 import ProgressCard from "@/components/ProgressCard";
+import VerticalSlider from "@/components/VerticalSlider/VerticalSlider";
 import Image from "next/image";
 import { BsDatabaseFillCheck } from "react-icons/bs";
 import { FaCloudBolt } from "react-icons/fa6";
@@ -12,26 +14,52 @@ export const FEATURED_ROWS_INFO = [
     description:
       "Replace your centralized frontend hosting with community governance and a global network of node operators.",
     media: (
-      <Image
-        alt="Decentralized"
-        src="/decentralized.svg"
-        width={400}
-        height={400}
-      />
+      <>
+        <Image
+          alt="Decentralized"
+          src="/decentralized-dark.png"
+          width={400}
+          height={400}
+          className="hidden dark:block max-w-[270px] sm:max-w-[400px] mt-10 sm:mt-0"
+        />
+        <Image
+          alt="Decentralized"
+          src="/decentralized.png"
+          width={400}
+          height={400}
+          className="dark:hidden block max-w-[270px] sm:max-w-[400px] mt-10 sm:mt-0"
+        />
+      </>
     ),
     inverted: false,
-    ctaText: "Decentralized CTA",
-    ctaLink: "https://",
+    cta: (
+      <Button size="small" href="https://" className="px-5 py-3 font-bold">
+        Decentralized CTA
+      </Button>
+    ),
   },
   {
     id: "2",
     title: "Easy",
     description:
       "For most projects, packaging your frontend for the EarthFast network is as simple as running one command.",
-    media: <Image alt="Easy" src="/easy-code.svg" width={480} height={400} />,
+    media: <VerticalSlider />,
     inverted: true,
-    ctaText: "Easy CTA",
-    ctaLink: "https://",
+    cta: (
+      <div className="flex gap-2 justify-center sm:justify-start">
+        <Button size="small" href="https://" className="px-5 py-3 font-bold">
+          Easy CTA
+        </Button>
+        <Button
+          size="small"
+          href="https://"
+          className="px-5 py-3 font-bold"
+          variant="inverted"
+        >
+          Second CTA
+        </Button>
+      </div>
+    ),
   },
   {
     id: "3",
@@ -42,14 +70,14 @@ export const FEATURED_ROWS_INFO = [
       <>
         <Image
           alt="Secure"
-          src="/secure.svg"
+          src="/secure.png"
           width={450}
           height={400}
           className="hidden dark:block"
         />
         <Image
           alt="Secure"
-          src="/secure-white.svg"
+          src="/secure-white.png"
           width={450}
           height={400}
           className="dark:hidden block"
@@ -57,8 +85,11 @@ export const FEATURED_ROWS_INFO = [
       </>
     ),
     inverted: false,
-    ctaText: "Secure CTA",
-    ctaLink: "https://",
+    cta: (
+      <Button size="small" href="https://" className="px-5 py-3 font-bold">
+        Secure CTA
+      </Button>
+    ),
   },
   {
     id: "4",
@@ -67,17 +98,39 @@ export const FEATURED_ROWS_INFO = [
       "The usability and performance of web2, with the decentralization guarantees of web3.",
     media: (
       <>
-        <ProgressCard progress={100} label="44s*" logoSrc="/ipfs.png" />
         <ProgressCard
           progress={25}
-          title="Armada"
+          title="EarthFast"
           label="<1s"
-          barColor="#FFB341"
+          barColor="#FFFFFF"
+          logoSrc="/white-logo.svg"
+          logoWidth={27}
+          logoHeight={27}
         />
+        <ProgressCard
+          progress={100}
+          label="44s*"
+          logoSrc="/ipfs.svg"
+          title="IPFS"
+        />
+        <p className="text-xs text-gray-400">
+          *Source:{" "}
+          <a
+            href="https://blog.cloudflare.com/ipfs-measurements"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Cloudflare IPFS Measurements
+          </a>
+        </p>
       </>
     ),
-    ctaText: "Fast CTA",
-    ctaLink: "https://",
+    cta: (
+      <Button size="small" href="https://" className="px-5 py-3 font-bold">
+        Fast CTA
+      </Button>
+    ),
     inverted: true,
   },
 ];

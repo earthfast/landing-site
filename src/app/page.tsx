@@ -1,15 +1,10 @@
-import cx from "classnames";
 import { MainBanner } from "@/components/Banner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
 import FeaturedRow from "@/components/FeaturedRow";
-import {
-  FEATURED_MINI_CARDS_INFO,
-  FEATURED_ROWS_INFO,
-} from "@/data/staticInfo";
+import { FEATURED_ROWS_INFO } from "@/data/staticInfo";
 import SectionContainer from "@/components/SectionContainer";
-import FeaturedMiniCard from "@/components/FeaturedMiniCard";
 import Hero from "@/components/Hero";
 import Button from "@/components/Button";
 
@@ -20,7 +15,7 @@ export default function Home() {
       <div className="relative">
         <Header />
         <Hero />
-        <div className="max-w-wrapper mx-auto flex flex-col mt-2 mb-12 gap-16">
+        <div className="max-w-wrapper mx-auto flex flex-col mt-10 mb-12 gap-16">
           {FEATURED_ROWS_INFO.map(({ id, ...rest }) => (
             <FeaturedRow key={id} {...rest} />
           ))}
@@ -39,7 +34,7 @@ export default function Home() {
             </div>
           }
         /> */}
-        <SectionContainer
+        {/* <SectionContainer
           title="Why projects choose EarthFast"
           highlightedWord="EarthFast"
           description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
@@ -87,7 +82,7 @@ export default function Home() {
               </div>
             </>
           }
-        />
+        /> */}
         <SectionContainer
           title="Ready to try EarthFast ?"
           highlightedWord="EarthFast"

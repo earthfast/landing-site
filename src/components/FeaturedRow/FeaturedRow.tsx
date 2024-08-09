@@ -6,16 +6,14 @@ interface FeaturedRowProps {
   description: string;
   media: React.ReactNode;
   inverted?: boolean;
-  ctaText?: string;
-  ctaLink?: string;
+  cta?: React.ReactNode;
 }
 
 function FeaturedRow({
   title,
   description,
   media,
-  ctaText,
-  ctaLink,
+  cta,
   inverted,
 }: FeaturedRowProps) {
   return (
@@ -32,11 +30,7 @@ function FeaturedRow({
         <p className="text-body-light dark:text-body-dark mb-6 text-sm sm:text-base">
           {description}
         </p>
-        {ctaText && (
-          <Button size="small" href={ctaLink} className="px-5 py-3">
-            {ctaText}
-          </Button>
-        )}
+        {cta}
       </div>
       <div
         className={cx(
@@ -44,7 +38,12 @@ function FeaturedRow({
           inverted ? "lg:items-start" : "lg:items-end"
         )}
       >
-        <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full" />
+        <div
+          className={cx(
+            "absolute bg-gradient-to-br from-transparent dark:to-gradient-color to-gradient-color-light  rounded-full opacity-32 blur-3xl top-1/2 left-1/2 transform -translate-y-1/2 h-full w-1/2",
+            inverted ? "-translate-x-2/4" : "-translate-x-1/4"
+          )}
+        />
         {media}
       </div>
     </section>

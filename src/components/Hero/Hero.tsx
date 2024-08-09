@@ -12,7 +12,7 @@ function Hero() {
     <section className="text-center px-5 lg:px-0 relative overflow-hidden z-30">
       <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-[-50%] left-1/2 transform -translate-x-1/2 h-[37.18rem] w-[50rem]" />
       <PerspectiveGrid />
-      <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[6.25rem] sm:pb-[10.31rem] relative z-50">
+      <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[2.25rem] sm:pb-[10.31rem] relative z-50">
         <div
           className={cx(
             robotoMono.className,
@@ -87,12 +87,12 @@ function Hero() {
 }
 
 const numColumns = 10;
-const numRows = 8;
+const numRows = 10;
 const totalCells = numColumns * numRows;
 
 function PerspectiveGrid() {
   return (
-    <div className="absolute top-[-250px] bottom-0 left-0 right-0 bg-hero-gradient dark:bg-none h-screen flex items-center justify-center z-0">
+    <div className="absolute top-[-450px] bottom-0 left-0 right-0 bg-hero-gradient dark:bg-none flex items-center justify-center z-0 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-40 after:bg-gradient-to-t after:from-white after:to-transparent dark:after:from-background-dark">
       <div className="perspective-grid__container">
         <div className="perspective-grid">
           {Array(totalCells)
