@@ -21,8 +21,9 @@ function Footer() {
         />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </div>
-      <a href="mailto:contact@armadanetwork.com">contact@armadanetwork.com</a>
-      <div className="flex items-center gap-8">
+      <a href="mailto:contact@earthfast.com">contact@earthfast.com</a>
+
+      {/* <div className="flex items-center gap-8">
         <a
           href="https://t.me/dheerajmanjunath"
           target="_blank"
@@ -53,7 +54,8 @@ function Footer() {
           </div>
           <FaGithub size={28} className="hidden dark:block" />
         </a>
-      </div>
+      </div> */}
+
     </footer>
   );
 }

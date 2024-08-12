@@ -1,8 +1,9 @@
-
+import Link from "next/link";
 import Image from "next/image";
 import cx from 'classnames';
 import { Roboto_Mono } from "next/font/google";
 import Button from '@/components/Button';
+import formatTitle from '@/components/SectionContainer/SectionContainer';
 import './hero.css';
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
@@ -13,7 +14,7 @@ function Hero() {
       <div className="hidden dark:block absolute bg-gradient-to-br from-transparent to-gradient-color rounded-full opacity-32 blur-3xl top-[-50%] left-1/2 transform -translate-x-1/2 h-[37.18rem] w-[50rem]" />
       <PerspectiveGrid />
       <div className="pt-[6.5rem] sm:pt-[8.5rem] pb-[2.25rem] sm:pb-[10.31rem] relative z-50">
-        <div
+        {/* <div
           className={cx(
             robotoMono.className,
             "text-xs sm:text-base uppercase font-regular"
@@ -21,7 +22,7 @@ function Hero() {
         >
           <span className="text-primary-light dark:text-primary-dark">#1</span>{" "}
           reprehenderit fugiat nulla
-        </div>
+        </div> */}
         <h2 className="text-4xl sm:text-[3.5rem] font-semibold max-w-[34.37rem] mx-auto leading-none mb-6">
           <span className="text-primary-light dark:text-primary-dark">
             Decentralize
@@ -29,11 +30,12 @@ function Hero() {
           your frontend, securely.
         </h2>
         <p className="mb-10 text-body-light dark:text-body-dark sm:text-base text-sm max-w-[37.5rem] mx-auto">
-          EarthFast is an infrastructure protocol that shifts the responsibility
+          An infrastructure protocol that shifts the responsibility
           of updating, deploying and hosting your frontend to a community of
           voters.
         </p>
-        <Button className="w-full sm:max-w-44 mb-10 sm:mb-14">
+        <Button className="w-full sm:max-w-44 mb-10 sm:mb-14 font-bold">
+        {/* <Button className="w-full sm:max-w-44 mb-10 sm:mb-14 font-bold" href="https://app.armada-hosted.com" target="_blank" rel="noopener noreferrer"> */}
           Get Started
         </Button>
         <div
@@ -45,41 +47,60 @@ function Hero() {
           Trusted by:
         </div>
         <div className="flex items-center justify-center sm:justify-between gap-10 max-w-[45.875rem] mx-auto">
-          <Image
-            src="/audius.png"
-            className="dark:hidden max-w-20 sm:max-w-40"
-            width={150}
-            height={31}
-            alt="Audius"
-          />
-          <Image
-            src="/audius-white.png"
-            className="hidden dark:block max-w-20 sm:max-w-40"
-            width={150}
-            height={31}
-            alt="Audius"
-          />
-          <Image
-            src="/synthetix.png"
-            width={170}
-            height={12}
-            alt="Synthetix"
-            className="max-w-24 sm:max-w-44"
-          />
-          <Image
-            src="/thales.png"
-            className="dark:hidden max-w-20 sm:max-w-36"
-            width={134}
-            height={32}
-            alt="Thales"
-          />
-          <Image
-            src="/thales-white.png"
-            className="hidden dark:block max-w-20 sm:max-w-36"
-            width={134}
-            height={32}
-            alt="Thales"
-          />
+          <Link href="https://audius.co" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/audius.png"
+              className="dark:hidden max-w-20 sm:max-w-40"
+              width={150}
+              height={31}
+              alt="Audius"
+            />
+          </Link>
+          <Link href="https://audius.co" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/audius-white.png"
+              className="hidden dark:block max-w-20 sm:max-w-40"
+              width={150}
+              height={31}
+              alt="Audius"
+            />
+          </Link>
+          <Link href="https://synthetix.io" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/synthetix.png"
+              width={170}
+              height={12}
+              alt="Synthetix"
+              className="dark:hidden max-w-24 sm:max-w-44"
+            />
+          </Link>
+          <Link href="https://synthetix.io" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/synthetix.png"
+              width={170}
+              height={12}
+              alt="Synthetix"
+              className="hidden dark:block max-w-24 sm:max-w-44"
+            />
+          </Link>
+          <Link href="https://thalesmarket.io" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/thales.png"
+              className="dark:hidden max-w-20 sm:max-w-36"
+              width={134}
+              height={32}
+              alt="Thales"
+            />
+          </Link>
+          <Link href="https://thalesmarket.io" target="_blank" rel="noopener noreferrer">
+            <Image
+              src="/thales-white.png"
+              className="hidden dark:block max-w-20 sm:max-w-36"
+              width={134}
+              height={32}
+              alt="Thales"
+            />
+          </Link>
         </div>
       </div>
     </section>
@@ -117,6 +138,5 @@ function PerspectiveGrid() {
     </div>
   );
 }
-
 
 export default Hero

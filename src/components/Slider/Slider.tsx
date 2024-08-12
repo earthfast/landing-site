@@ -38,13 +38,11 @@ const Slider = () => {
           >
             TESTIMONIALS
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-semibold text-title-light dark:text-title-dark mt-0 text-center sm:text-left mb-4 sm:mb-6">
+          {/* <h3 className="text-3xl sm:text-4xl font-semibold text-title-light dark:text-title-dark mt-0 text-center sm:text-left mb-4 sm:mb-6">
             EarthFast values partners.
-          </h3>
+          </h3> */}
           <p className="text-body-light dark:text-body-dark text-xs sm:text-lg text-center sm:text-left sm:max-w-[35.75rem] max-w-full">
-            Service providers, technical alliances, resellers and integrators
-            are loving the innovation and profitability Storj brings to a
-            stagnant, high-cost market.
+            Our partners rely on EarthFast to provide a decentralized hosting solution that is secure, fast, and easy to use.
           </p>
         </div>
         <SlickSlider ref={sliderRef} {...settings}>

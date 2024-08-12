@@ -6,6 +6,35 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { useState, useEffect } from "react";
 
 function Header() {
+  return (
+    <header className="py-4 px-5 lg:px-0 max-w-wrapper mx-auto flex justify-between items-center absolute left-0 top-0 right-0 z-50">
+      <Link href="/" className="flex items-center gap-3">
+        <Image
+          width={36}
+          height={36}
+          src="/dark-logo.svg"
+          alt="Earth fast logo"
+          className="hidden dark:block w-6 h-6 sm:w-9 sm:h-9"
+        />
+        <Image
+          width={36}
+          height={36}
+          src="/logo.svg"
+          alt="Earth fast logo"
+          className="dark:hidden w-6 h-6 sm:w-9 sm:h-9"
+        />
+        <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
+      </Link>
+      <div className="flex items-center space-x-4">
+        <Button variant="inverted" className="leading-3 !py-3 font-bold" href="https://app.armada-hosted.com" target="_blank" rel="noopener noreferrer">
+          Get Started
+        </Button>
+      </div>
+    </header>
+  );
+}
+
+function HeaderWithMobileAndButtons() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleMobileMenuToggle = () => {

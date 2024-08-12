@@ -24,10 +24,13 @@ const buttonStyles = tv({
   },
 });
 
+
 type ButtonProps = {
   variant?: "primary" | "inverted" | "text";
   size?: "small" | "medium" | "large";
   href?: string;
+  target?: string;
+  rel?: string;
   children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -37,12 +40,16 @@ function Button({
   className,
   children,
   href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   if (href) {
     return (
       <Link
         href={href}
+        target={target}
+        rel={rel}
         className={cx(buttonStyles({ variant, size }), className)}
       >
         {children}
