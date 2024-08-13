@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Earth Fast - Decentralize your frontend, securely.",
+  title: "EarthFast - Decentralize your frontend, securely.",
   description:
     "EarthFast is an infrastructure protocol that shifts the responsibility of updating, deploying and hosting your frontend to a community of voters.",
   icons: {
