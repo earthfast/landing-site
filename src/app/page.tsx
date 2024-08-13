@@ -11,7 +11,7 @@ import Button from "@/components/Button";
 export default function Home() {
   return (
     <main>
-      <MainBanner />
+      {/* <MainBanner /> */}
       <div className="relative">
         <Header />
         <Hero />
@@ -21,9 +21,9 @@ export default function Home() {
           ))}
         </div>
         {/* <SectionContainer
-          title="Learn how Sia works"
-          highlightedWord="Sia"
-          description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
+          title="Learn how EarthFast works"
+          highlightedWord="EarthFast"
+          description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. EarthFast [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
           content={
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-wrapper mx-auto px-5 sm:px-0">
               {FEATURED_CARDS_INFO.map(({ id, ...rest }) => (
@@ -37,7 +37,7 @@ export default function Home() {
         {/* <SectionContainer
           title="Why projects choose EarthFast"
           highlightedWord="EarthFast"
-          description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. Sia [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
+          description="Cryptography has unleashed the latent power of the Internet by enabling interactions between mutually-distrusting parties. EarthFast [sigh-uh] harnesses this power to create a trustless cloud storage marketplace, allowing buyers and sellers to transact directly."
           content={
             <>
               <div className="border-t-[1px] dark:border-t-white/[0.12] border-t-black/[0.1]">
@@ -84,15 +84,15 @@ export default function Home() {
           }
         /> */}
         <SectionContainer
-          title="Ready to try EarthFast ?"
+          title="Ready to try EarthFast?"
           highlightedWord="EarthFast"
-          description="Deploy a site in 90 seconds"
+          description="Deploy your site in 90 seconds"
           content={
             <div className="flex gap-4 justify-center mb-20">
-              <Button className="px-7">Get Started</Button>
-              <Button className="px-7" variant="inverted">
+              <Button href="https://dashboard.earthfast.com" className="px-7" target="_blank" rel="noopener noreferrer">Get Started</Button>
+              {/* <Button href="https://docs.earthfast.io" className="px-7" variant="inverted" target="_blank" rel="noopener noreferrer">
                 View Docs
-              </Button>
+              </Button> */}
             </div>
           }
         />

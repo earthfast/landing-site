@@ -33,18 +33,16 @@ const Slider = () => {
           <h2
             className={cx(
               robotoMono.className,
-              "text-xs sm:text-base font-normal text-[#0B44D8] dark:text-[#081842] tracking-[0.15rem] mb-4 text-center sm:text-left"
+              "text-xs sm:text-base font-normal text-[#0B44D8] dark:text-white tracking-[0.15rem] mb-4 text-center sm:text-left"
             )}
           >
             TESTIMONIALS
           </h2>
-          <h3 className="text-3xl sm:text-4xl font-semibold text-title-light dark:text-title-dark mt-0 text-center sm:text-left mb-4 sm:mb-6">
+          {/* <h3 className="text-3xl sm:text-4xl font-semibold text-title-light dark:text-title-dark mt-0 text-center sm:text-left mb-4 sm:mb-6">
             EarthFast values partners.
-          </h3>
+          </h3> */}
           <p className="text-body-light dark:text-body-dark text-xs sm:text-lg text-center sm:text-left sm:max-w-[35.75rem] max-w-full">
-            Service providers, technical alliances, resellers and integrators
-            are loving the innovation and profitability Storj brings to a
-            stagnant, high-cost market.
+            EarthFast is used by some of the world&apos;s leading decentralized projects.
           </p>
         </div>
         <SlickSlider ref={sliderRef} {...settings}>

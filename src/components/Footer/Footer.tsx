@@ -21,9 +21,10 @@ function Footer() {
         />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </div>
-      <a href="mailto:contact@armadanetwork.com">contact@armadanetwork.com</a>
+      <a href="mailto:contact@earthfast.com">contact@earthfast.com</a>
+
       <div className="flex items-center gap-8">
-        <a
+        {/* <a
           href="https://t.me/dheerajmanjunath"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,9 +33,9 @@ function Footer() {
             <FaTelegram size={28} color="#2E93FF" className="dark:hidden" />
           </div>
           <FaTelegram size={28} className="hidden dark:block" />
-        </a>
+        </a> */}
         <a
-          href="https://x.com/armada_infra"
+          href="https://x.com/EarthFastHQ"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -54,6 +55,7 @@ function Footer() {
           <FaGithub size={28} className="hidden dark:block" />
         </a>
       </div>
+
     </footer>
   );
 }
