@@ -218,7 +218,7 @@ export const TESTIMONIALS = [
     logo: "/audius.png",
     whiteLogo: "/audius-white.png",
     quote:
-      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, Armada puts that control in the hands of the Audius community.”",
+      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
   },
   {
     company: "Synthetix",

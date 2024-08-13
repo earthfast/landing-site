@@ -17,7 +17,7 @@ const slides = [
         </div>
         <div className="text-white md:text-2xl flex items-center gap-1 text-left">
           <MdOutlineAttachMoney size={30} />
-          npx armada-cli bundle create
+          npx earthfast-cli bundle create
         </div>
       </div>
     ),
