@@ -42,7 +42,7 @@ const Slider = () => {
             EarthFast values partners.
           </h3> */}
           <p className="text-body-light dark:text-body-dark text-xs sm:text-lg text-center sm:text-left sm:max-w-[35.75rem] max-w-full">
-            EarthFast is used by some of the world's leading decentralized projects.
+            EarthFast is used by some of the world&apos;s leading decentralized projects.
           </p>
         </div>
         <SlickSlider ref={sliderRef} {...settings}>
