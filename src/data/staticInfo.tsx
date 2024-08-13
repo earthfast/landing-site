@@ -33,7 +33,7 @@ export const FEATURED_ROWS_INFO = [
     ),
     inverted: false,
     // cta: (
-    //   <Button size="small" href="https://app.armada-hosted.com" target="_blank" rel="noopener noreferrer" className="px-5 py-3 font-bold">
+    //   <Button size="small" href="https://dashboard.earthfast.com" target="_blank" rel="noopener noreferrer" className="px-5 py-3 font-bold">
     //     Get Started
     //   </Button>
     // ),
@@ -218,20 +218,20 @@ export const TESTIMONIALS = [
     logo: "/audius.png",
     whiteLogo: "/audius-white.png",
     quote:
-      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
+      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, Armada puts that control in the hands of the Audius community.”",
   },
   {
     company: "Synthetix",
     logo: "/synthetix.png",
     whiteLogo: "/synthetix.png",
     quote:
-      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
+      "EarthFast addresses one of the most pressing issues in web3, enabling the decentralisation of front-ends, a huge area of centralisation in projects today.”",
   },
   {
     company: "Thales",
     logo: "/thales.png",
     whiteLogo: "/thales-white.png",
     quote:
-      "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
+      "Web3 came a long way through the years, but centralized frontends were always our weakest point. EarthFast is the solution we have been waiting for, bringing us decentralized yet performant frontends!”",
   },
 ];

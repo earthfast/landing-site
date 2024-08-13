@@ -19,7 +19,7 @@ function FeaturedRow({
   return (
     <section
       className={cx(
-        "flex flex-col items-center px-5 lg:px-0 text-center lg:text-left justify-between gap-7",
+        "flex flex-col items-center px-5 xl:px-0 text-center lg:text-left justify-between gap-7",
         inverted ? "lg:flex-row-reverse" : "lg:flex-row"
       )}
     >

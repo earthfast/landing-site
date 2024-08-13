@@ -33,7 +33,7 @@ const Slider = () => {
           <h2
             className={cx(
               robotoMono.className,
-              "text-xs sm:text-base font-normal text-[#0B44D8] dark:text-[#081842] tracking-[0.15rem] mb-4 text-center sm:text-left"
+              "text-xs sm:text-base font-normal text-[#0B44D8] dark:text-white tracking-[0.15rem] mb-4 text-center sm:text-left"
             )}
           >
             TESTIMONIALS
@@ -42,7 +42,7 @@ const Slider = () => {
             EarthFast values partners.
           </h3> */}
           <p className="text-body-light dark:text-body-dark text-xs sm:text-lg text-center sm:text-left sm:max-w-[35.75rem] max-w-full">
-            Our partners rely on EarthFast to provide a decentralized hosting solution that is secure, fast, and easy to use.
+            EarthFast is used by some of the world's leading decentralized projects.
           </p>
         </div>
         <SlickSlider ref={sliderRef} {...settings}>

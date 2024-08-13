@@ -89,7 +89,7 @@ export default function Home() {
           description="Deploy your site in 90 seconds"
           content={
             <div className="flex gap-4 justify-center mb-20">
-              <Button href="https://app.armada-hosted.com" className="px-7" target="_blank" rel="noopener noreferrer">Get Started</Button>
+              <Button href="https://dashboard.earthfast.com" className="px-7" target="_blank" rel="noopener noreferrer">Get Started</Button>
               {/* <Button href="https://docs.earthfast.io" className="px-7" variant="inverted" target="_blank" rel="noopener noreferrer">
                 View Docs
               </Button> */}

@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 function Header() {
   return (
-    <header className="py-4 px-5 lg:px-0 max-w-wrapper mx-auto flex justify-between items-center absolute left-0 top-0 right-0 z-50">
+    <header className="py-4 px-5 xl:px-0 max-w-wrapper mx-auto flex justify-between items-center absolute left-0 top-0 right-0 z-50">
       <Link href="/" className="flex items-center gap-3">
         <Image
           width={36}
@@ -26,7 +26,7 @@ function Header() {
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
       <div className="flex items-center space-x-4">
-        <Button variant="inverted" className="leading-3 !py-3 font-bold" href="https://app.armada-hosted.com" target="_blank" rel="noopener noreferrer">
+        <Button variant="inverted" className="leading-3 !py-3 font-bold" href="https://dashboard.earthfast.com" target="_blank" rel="noopener noreferrer">
           Get Started
         </Button>
       </div>
