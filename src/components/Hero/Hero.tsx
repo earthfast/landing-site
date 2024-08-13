@@ -94,49 +94,6 @@ function Hero() {
             />
           </Link>
 
-        {/* <Image
-          src="/audius.png"
-          className="dark:hidden max-w-20 sm:max-w-40"
-          width={150}
-          height={31}
-          alt="Audius"
-        />
-        <Image
-          src="/audius-white.png"
-          className="hidden dark:block max-w-20 sm:max-w-40"
-          width={150}
-          height={31}
-          alt="Audius"
-        />
-        <Image
-          src="/synthetix.png"
-          width={170}
-          height={12}
-          alt="Synthetix"
-          className="dark:hidden max-w-24 sm:max-w-44"
-        />
-        <Image
-          src="/synthetix.png"
-          width={170}
-          height={12}
-          alt="Synthetix"
-          className="hidden dark:block max-w-24 sm:max-w-44"
-        />
-        <Image
-          src="/thales.png"
-          className="dark:hidden max-w-20 sm:max-w-36"
-          width={134}
-          height={32}
-          alt="Thales"
-        />
-        <Image
-          src="/thales-white.png"
-          className="hidden dark:block max-w-20 sm:max-w-36"
-          width={134}
-          height={32}
-          alt="Thales"
-        /> */}
-
         </div>
       </div>
     </section>
