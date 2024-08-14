@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import ProgressCard from "@/components/ProgressCard";
 import VerticalSlider from "@/components/VerticalSlider/VerticalSlider";
 import Image from "next/image";
@@ -215,7 +214,7 @@ export const FEATURED_MINI_CARDS_INFO = [
 export const TESTIMONIALS = [
   {
     company: "Audius",
-    logo: "/audius.png",
+    logo: "/audius-white.png",
     whiteLogo: "/audius-white.png",
     quote:
       "“EarthFast is the only consumer-accessible way to fully decentralize a frontend application today, full stop. From hosting to decision making around what to host, EarthFast puts that control in the hands of the Audius community.”",
@@ -229,7 +228,7 @@ export const TESTIMONIALS = [
   },
   {
     company: "Thales",
-    logo: "/thales.png",
+    logo: "/thales-white.png",
     whiteLogo: "/thales-white.png",
     quote:
       "Web3 came a long way through the years, but centralized frontends were always our weakest point. EarthFast is the solution we have been waiting for, bringing us decentralized yet performant frontends!”",

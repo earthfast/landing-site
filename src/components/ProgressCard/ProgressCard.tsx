@@ -25,7 +25,12 @@ const ProgressCard: React.FC<ProgressCardProps> = ({
         {(!!logoSrc || !!title) && (
           <>
             {!!logoSrc && (
-              <Image src={logoSrc} alt="Company" width={logoWidth} height={logoHeight} />
+              <Image
+                src={logoSrc}
+                alt="Company"
+                width={logoWidth}
+                height={logoHeight}
+              />
             )}
             {!!title && (
               <span className="sm:text-lg text-sm text-white">{title}</span>

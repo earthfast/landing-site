@@ -5,7 +5,7 @@ import Image from "next/image";
 import SlickSlider from "react-slick";
 import cx from "classnames";
 import { Roboto_Mono } from "next/font/google";
-import { TESTIMONIALS } from "@/data/staticInfo";
+import { TESTIMONIALS } from "@/data/StaticData";
 import { LiaChevronCircleLeftSolid, LiaChevronCircleRightSolid } from "react-icons/lia";
 
 import "slick-carousel/slick/slick.css";
@@ -21,64 +21,96 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
 };
 
 const Slider = () => {
   const sliderRef = useRef<SlickSlider>(null);
 
   return (
-    <div className="slider bg-gradient-to-b dark:from-[#2E93FF] dark:to-[#007DD8] from-[#2E93FF]/[0.3] to-[#2E93FF] rounded-lg max-w-[87rem] lg:mx-auto px-5 pt-8 pb-10 sm:pt-16 sm:px-12 sm:pb-14 relative sm:mx-5 mx-3">
-      <div className="flex flex-col lg:flex-row items-start justify-between">
-        <div className="mb-10 lg:mb-0">
-          <h2
-            className={cx(
-              robotoMono.className,
-              "text-xs sm:text-base font-normal text-[#0B44D8] dark:text-white tracking-[0.15rem] mb-4 text-center sm:text-left"
-            )}
-          >
-            TESTIMONIALS
-          </h2>
-          {/* <h3 className="text-3xl sm:text-4xl font-semibold text-title-light dark:text-title-dark mt-0 text-center sm:text-left mb-4 sm:mb-6">
-            EarthFast values partners.
-          </h3> */}
-          <p className="text-body-light dark:text-body-dark text-xs sm:text-lg text-center sm:text-left sm:max-w-[35.75rem] max-w-full">
-            EarthFast is used by some of the world&apos;s leading decentralized projects.
-          </p>
-        </div>
-        <SlickSlider ref={sliderRef} {...settings}>
-          {TESTIMONIALS.map(({ logo, whiteLogo, company, quote }, i) => (
-            <div key={`${company}-${i}`} className="px-2">
-              <div className="md:mt-0 bg-white dark:bg-white/[0.20] rounded-3xl max-w-full sm:max-w-[39.75rem] p-6 sm:py-12 sm:px-10 min-h-[21.75rem]">
-                <div className="flex items-center mb-6 sm:mb-10">
-                  <Image
-                    src={logo}
-                    alt={`${company} Logo`}
-                    className="mr-4 !dark:hidden"
-                    width={170}
-                    height={32}
-                  />
-                  <Image
-                    src={whiteLogo}
-                    alt={`${company} Logo`}
-                    className="mr-4 !dark:block !hidden"
-                    width={170}
-                    height={32}
-                  />
-                </div>
-                <p className="text-body-light dark:text-white text-base sm:text-2xl">
-                  {quote}
-                </p>
-              </div>
-            </div>
-          ))}
-        </SlickSlider>
+    <div className="slider dark:bg-gray-800 bg-gray-100 rounded-2xl max-w-wrapper lg:mx-auto px-3 sm:py-9 py-7 relative sm:mx-5 mx-3">
+      <div className="flex flex-col items-center mb-10">
+        <h2
+          className={cx(
+            robotoMono.className,
+            "text-xl font-normal text-[#0B44D8] dark:text-blue-300 tracking-[0.15rem] mb-4 text-center"
+          )}
+        >
+          TESTIMONIALS
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300 text-lg text-center max-w-[35.75rem]">
+          EarthFast is used by some of the world&apos;s leading decentralized
+          projects.
+        </p>
       </div>
-      <div className="flex justify-center md:justify-start lg:absolute lg:bottom-8 md:left-6 gap-2 mt-6 lg:mt-0">
-        <button onClick={() => sliderRef?.current?.slickPrev()}>
-          <LiaChevronCircleLeftSolid size={44} color="black" />
+      <div className="relative flex flex-col xl:flex-row items-center justify-center">
+        <button
+          onClick={() => sliderRef?.current?.slickPrev()}
+          className="z-10 mr-4 hidden xl:block"
+        >
+          <LiaChevronCircleLeftSolid
+            size={44}
+            className="text-gray-600 dark:text-gray-400"
+          />
         </button>
-        <button onClick={() => sliderRef?.current?.slickNext()}>
-          <LiaChevronCircleRightSolid size={44} color="black" />
+        <div className="w-full sm:w-[unset]">
+          <SlickSlider ref={sliderRef} {...settings}>
+            {TESTIMONIALS.map(({ logo, whiteLogo, company, quote }, i) => (
+              <div key={`${company}-${i}`} className="px-2">
+                <div className="md:mt-0 bg-white dark:bg-gray-700 rounded-3xl p-6 sm:py-12 sm:px-10 min-h-[21.75rem]">
+                  <div className="flex items-center mb-6 sm:mb-10">
+                    <Image
+                      src={logo}
+                      alt={`${company} Logo`}
+                      className="mr-4 !dark:hidden"
+                      width={170}
+                      height={32}
+                    />
+                    <Image
+                      src={whiteLogo}
+                      alt={`${company} Logo`}
+                      className="mr-4 !dark:block !hidden"
+                      width={170}
+                      height={32}
+                    />
+                  </div>
+                  <p className="text-gray-800 dark:text-gray-200 text-base sm:text-2xl">
+                    {quote}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </SlickSlider>
+        </div>
+        <button
+          onClick={() => sliderRef?.current?.slickNext()}
+          className="z-10 ml-4 hidden xl:block"
+        >
+          <LiaChevronCircleRightSolid
+            size={44}
+            className="text-gray-600 dark:text-gray-400"
+          />
+        </button>
+      </div>
+      <div className="flex justify-center mt-6 xl:hidden">
+        <button
+          onClick={() => sliderRef?.current?.slickPrev()}
+          className="z-10 mr-4"
+        >
+          <LiaChevronCircleLeftSolid
+            size={44}
+            className="text-gray-600 dark:text-gray-400"
+          />
+        </button>
+        <button
+          onClick={() => sliderRef?.current?.slickNext()}
+          className="z-10 ml-4"
+        >
+          <LiaChevronCircleRightSolid
+            size={44}
+            className="text-gray-600 dark:text-gray-400"
+          />
         </button>
       </div>
     </div>

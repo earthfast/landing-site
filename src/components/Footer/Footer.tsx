@@ -3,7 +3,7 @@ import { FaTwitter, FaGithub, FaTelegram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="max-w-wrapper mx-auto py-10 flex justify-between items-center flex-col sm:flex-row gap-8">
+    <footer className="max-w-wrapper mx-auto py-10 flex justify-between items-center flex-col sm:flex-row gap-8 mt-9">
       <div className="flex items-center gap-3">
         <Image
           width={32}

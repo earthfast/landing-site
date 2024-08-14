@@ -3,7 +3,6 @@ import Image from "next/image";
 import cx from 'classnames';
 import { Roboto_Mono } from "next/font/google";
 import Button from '@/components/Button';
-import formatTitle from '@/components/SectionContainer/SectionContainer';
 import './hero.css';
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
@@ -44,7 +43,7 @@ function Hero() {
           )}>
           Trusted by:
         </div>
-        <div className="flex items-center justify-center sm:justify-between gap-10 max-w-[45.875rem] mx-auto">
+        <div className="flex items-center justify-center sm:justify-between gap-10 max-w-[45.875rem] mx-auto pr-2 sm:pr-5">
           <Link href="https://audius.co" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-40">
             <Image
               src="/audius.png"
@@ -61,15 +60,7 @@ function Hero() {
               alt="Audius"
             />
           </Link>
-          <Link href="https://synthetix.io" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-24 sm:max-w-44">
-            <Image
-              src="/synthetix.png"
-              width={170}
-              height={12}
-              alt="Synthetix"
-            />
-          </Link>
-          <Link href="https://synthetix.io" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-24 sm:max-w-44">
+          <Link href="https://synthetix.io" target="_blank" rel="noopener noreferrer" className="max-w-24 sm:max-w-44">
             <Image
               src="/synthetix.png"
               width={170}
