@@ -1,4 +1,14 @@
 .slider .slick-slider {
-  max-width: 39.75rem !important;
+  max-width: 100% !important;
   width: 100%;
+}
+
+.slider .slick-slide {
+  padding: 0 10px;
+}
+
+@media (min-width: 640px) {
+  .slider .slick-slider {
+    max-width: 50rem !important;
+  }
 }

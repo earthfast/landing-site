@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
 import FeaturedRow from "@/components/FeaturedRow";
-import { FEATURED_ROWS_INFO } from "@/data/staticInfo";
+import { FEATURED_ROWS_INFO } from "@/data/StaticData";
 import SectionContainer from "@/components/SectionContainer";
 import Hero from "@/components/Hero";
 import Button from "@/components/Button";
@@ -15,7 +15,7 @@ export default function Home() {
       <div className="relative">
         <Header />
         <Hero />
-        <div className="max-w-wrapper mx-auto flex flex-col mt-10 mb-12 gap-16">
+        <div className="max-w-wrapper mx-auto flex flex-col mt-20 mb-12 gap-16">
           {FEATURED_ROWS_INFO.map(({ id, ...rest }) => (
             <FeaturedRow key={id} {...rest} />
           ))}

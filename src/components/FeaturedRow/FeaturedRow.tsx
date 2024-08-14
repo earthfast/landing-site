@@ -1,5 +1,4 @@
 import cx from "classnames";
-import Button from "../Button";
 
 interface FeaturedRowProps {
   title: string;
@@ -19,22 +18,22 @@ function FeaturedRow({
   return (
     <section
       className={cx(
-        "flex flex-col items-center px-5 xl:px-0 text-center lg:text-left justify-between gap-7",
+        "flex justify-center px-5 xl:px-0 text-center lg:text-left items-center flex-col gap-10",
         inverted ? "lg:flex-row-reverse" : "lg:flex-row"
       )}
     >
-      <div className="max-w-[30.37rem]">
+      <div>
         <h2 className="text-title-light dark:text-title-dark mb-2 lg:mb-4 text-[1.625rem] sm:text-[2.5rem] font-semibold">
           {title}
         </h2>
-        <p className="text-body-light dark:text-body-dark mb-6 text-sm sm:text-base">
+        <p className="text-body-light dark:text-body-dark mb-6 text-sm sm:text-base max-w-[28rem]">
           {description}
         </p>
         {cta}
       </div>
       <div
         className={cx(
-          "relative w-full flex items-center flex-col gap-3",
+          "relative w-full max-w-[35rem] flex items-center flex-col gap-3",
           inverted ? "lg:items-start" : "lg:items-end"
         )}
       >
