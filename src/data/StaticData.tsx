@@ -139,29 +139,28 @@ export const FEATURED_CARDS_INFO = [
     id: "1",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
     title: "Rent",
-    description: "Rent space and store your data on the EarthFast network.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     imageSrc: "/rent.jpeg",
   },
   {
     id: "2",
     icon: <FaCloudBolt color="#2E93FF" size={26} />,
     title: "Host",
-    description: "Offer your storage space on the EarthFast network.",
+    description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     imageSrc: "/host.jpg",
   },
   {
     id: "3",
     icon: <GiBrain color="#2E93FF" size={26} />,
     title: "Learn",
-    description:
-      "Learn all about how EarthFast works, why it was created, and the non-profit foundation that maintains it.",
+    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     imageSrc: "/learn.jpg",
   },
   {
     id: "4",
     icon: <RiHonourFill color="#2E93FF" size={26} />,
     title: "Grants",
-    description: "The EarthFast Foundation welcomes contributors from all over the world to come and build on EarthFast through our Grants program.",
+    description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     imageSrc: "/grants.jpg",
   },
 ];
@@ -170,44 +169,38 @@ export const FEATURED_MINI_CARDS_INFO = [
   {
     id: "1",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
-    title: "Completely Private",
-    description:
-      "EarthFast encrypts and distributes your files across a decentralized network. Unlike traditional cloud storage providers, you truly own your data: no third party can access your files or prevent you from accessing them.",
+    title: "Fully Transparent but Secure",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     id: "2",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
     title: "Highly Redundant",
-    description:
-      "EarthFast distributes and stores redundant file segments on nodes across the globe, eliminating any single point of failure and achieving uptime and throughput that no centralized provider can compete with.",
+    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     id: "3",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
-    title: "Far More Affordable",
-    description:
-      "On average, EarthFast's decentralized cloud storage costs 90% less than incumbent cloud storage providers. Storing 1 TB of files on EarthFast costs about $1-2 per month, compared with $23 on Amazon S3 - bandwidth is also a magnitude cheaper.",
+    title: "Cost Effective",
+    description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
   },
   {
     id: "4",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
     title: "Designed for integration",
-    description:
-      "The EarthFast software exposes highly modular JSON-speaking endpoints. renterd can even scale horizontally: in stateless mode, it provides raw access to the EarthFast renter-host protocol, with no UI, no blockchain, and no disk I/O — perfect for massive renting operations.",
+    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
   },
   {
     id: "5",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
     title: "R&D leader",
-    description:
-      "The EarthFast storage network has been securely storing data since 2014. EarthFast has pioneered the use of many new technologies at scale, such as its use of state channels to process an estimated 20 billion micropayments per day.",
+    description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
   },
   {
     id: "6",
     icon: <BsDatabaseFillCheck color="#2E93FF" size={26} />,
-    title: "Far More Affordable",
-    description:
-      "EarthFast's software is completely open source, with contributions from leading software engineers. EarthFast has a thriving community of developers and companies building innovative applications and businesses on top of EarthFast.",
+    title: "Fully Decentralized",
+    description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.",
   },
 ];
 
