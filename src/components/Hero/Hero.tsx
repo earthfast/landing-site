@@ -44,7 +44,7 @@ function Hero() {
           Trusted by:
         </div>
         <div className="flex items-center justify-center sm:justify-between gap-10 max-w-[45.875rem] mx-auto pr-2 sm:pr-5">
-          <Link href="https://audius.co" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-40">
+          <Link href="https://app.audius.co" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-40">
             <Image
               src="/audius.png"
               width={150}
@@ -52,7 +52,7 @@ function Hero() {
               alt="Audius"
             />
           </Link>
-          <Link href="https://audius.co" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-20 sm:max-w-40">
+          <Link href="https://app.audius.co" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-20 sm:max-w-40">
             <Image
               src="/audius-white.png"
               width={150}
@@ -60,7 +60,7 @@ function Hero() {
               alt="Audius"
             />
           </Link>
-          <Link href="https://synthetix.io" target="_blank" rel="noopener noreferrer" className="max-w-24 sm:max-w-44">
+          <Link href="https://synthetix.sepolia.earthfast.app" target="_blank" rel="noopener noreferrer" className="max-w-24 sm:max-w-44">
             <Image
               src="/synthetix.png"
               width={170}
@@ -68,7 +68,7 @@ function Hero() {
               alt="Synthetix"
             />
           </Link>
-          <Link href="https://thalesmarket.io" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-36">
+          <Link href="https://thales-io.sepolia.earthfast.app" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-36">
             <Image
               src="/thales.png"
               width={134}
@@ -76,7 +76,7 @@ function Hero() {
               alt="Thales"
             />
           </Link>
-          <Link href="https://thalesmarket.io" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-20 sm:max-w-36">
+          <Link href="https://thales-io.sepolia.earthfast.app" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-20 sm:max-w-36">
             <Image
               src="/thales-white.png"
               width={134}
