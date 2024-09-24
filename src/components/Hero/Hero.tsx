@@ -4,6 +4,7 @@ import cx from 'classnames';
 import { Roboto_Mono } from "next/font/google";
 import Button from '@/components/Button';
 import './hero.css';
+import { HiArrowRight } from "react-icons/hi";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
@@ -22,37 +23,50 @@ function Hero() {
           <span className="text-primary-light dark:text-primary-dark">#1</span>{" "}
           reprehenderit fugiat nulla
         </div> */}
-        <h2 className="text-4xl sm:text-[5rem] font-semibold max-w-[50rem] mx-auto leading-none mb-6 mt-20">
+      <div className="mt-10">
+        <AnnouncementBanner />
+      </div>
+        <h2 className="text-4xl sm:text-[5rem] font-semibold max-w-[50rem] mx-auto leading-none mb-6 mt-5">
           <span className="text-primary-light dark:text-primary-dark">
             Decentralize
           </span>{" "}
           your frontend, securely.
         </h2>
         <p className="mb-10 text-body-light dark:text-body-dark sm:text-lg text-sm max-w-[37.5rem] mx-auto">
-          An infrastructure protocol that shifts the responsibility
-          of updating, deploying and hosting your frontend to a community of
-          voters.
+          An infrastructure protocol that shifts the responsibility of updating,
+          deploying and hosting your frontend to a community of voters.
         </p>
-        <Button className="w-full sm:max-w-44 mb-10 sm:my-20 font-bold block mx-auto" href="https://dashboard.earthfast.com" target="_blank" rel="noopener noreferrer">
+        <Button
+          className="w-full sm:max-w-44 mb-10 sm:my-20 font-bold block mx-auto"
+          href="https://dashboard.earthfast.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Get Started
         </Button>
         <div
           className={cx(
             robotoMono.className,
             "text-[0.625rem] sm:text-xs uppercase font-semibold tracking-[0.3rem] mb-6"
-          )}>
+          )}
+        >
           Trusted by:
         </div>
         <div className="flex items-center justify-center sm:justify-between gap-10 max-w-[45.875rem] mx-auto pr-2 sm:pr-5">
-          <Link href="https://app.audius.co" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-40">
-            <Image
-              src="/audius.png"
-              width={150}
-              height={31}
-              alt="Audius"
-            />
+          <Link
+            href="https://app.audius.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="dark:hidden max-w-20 sm:max-w-40"
+          >
+            <Image src="/audius.png" width={150} height={31} alt="Audius" />
           </Link>
-          <Link href="https://app.audius.co" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-20 sm:max-w-40">
+          <Link
+            href="https://app.audius.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden dark:block max-w-20 sm:max-w-40"
+          >
             <Image
               src="/audius-white.png"
               width={150}
@@ -60,7 +74,12 @@ function Hero() {
               alt="Audius"
             />
           </Link>
-          <Link href="https://synthetix.sepolia.earthfast.app" target="_blank" rel="noopener noreferrer" className="max-w-24 sm:max-w-44">
+          <Link
+            href="https://synthetix.sepolia.earthfast.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="max-w-24 sm:max-w-44"
+          >
             <Image
               src="/synthetix.png"
               width={170}
@@ -68,15 +87,20 @@ function Hero() {
               alt="Synthetix"
             />
           </Link>
-          <Link href="https://thales-io.sepolia.earthfast.app" target="_blank" rel="noopener noreferrer" className="dark:hidden max-w-20 sm:max-w-36">
-            <Image
-              src="/thales.png"
-              width={134}
-              height={32}
-              alt="Thales"
-            />
+          <Link
+            href="https://thales-io.sepolia.earthfast.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="dark:hidden max-w-20 sm:max-w-36"
+          >
+            <Image src="/thales.png" width={134} height={32} alt="Thales" />
           </Link>
-          <Link href="https://thales-io.sepolia.earthfast.app" target="_blank" rel="noopener noreferrer" className="hidden dark:block max-w-20 sm:max-w-36">
+          <Link
+            href="https://thales-io.sepolia.earthfast.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden dark:block max-w-20 sm:max-w-36"
+          >
             <Image
               src="/thales-white.png"
               width={134}
@@ -84,10 +108,32 @@ function Hero() {
               alt="Thales"
             />
           </Link>
-
         </div>
       </div>
     </section>
+  );
+}
+
+function AnnouncementBanner() {
+  return (
+    <Link href="https://x.com/EarthFast/status/1838670952386707734" target="_blank" rel="noopener noreferrer" className="group inline-block">
+      <div className="bg-primary-light/10 dark:bg-primary-dark/20 backdrop-blur-sm text-white py-3 px-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 group-hover:bg-primary-light/20 dark:group-hover:bg-primary-dark/30 animate-border relative overflow-hidden">
+        <span className="font-bold text-lg">
+          We raised{" "}
+          <span className="text-primary-light dark:text-primary-dark font-extrabold text-xl">
+            $1.4M
+          </span>{" "}
+          in pre-seed funding
+        </span>
+        <span className="text-primary-light/50 dark:text-primary-dark/50">
+          •
+        </span>
+        <span className="flex items-center group-hover:underline font-semibold">
+          Read more
+          <HiArrowRight className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:translate-x-1" />
+        </span>
+      </div>
+    </Link>
   );
 }
 
