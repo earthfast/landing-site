@@ -116,14 +116,14 @@ function Hero() {
 
 function AnnouncementBanner() {
   return (
-    <Link href="/announcement" className="group inline-block">
+    <Link href="https://x.com/EarthFast/status/1838670952386707734" target="_blank" rel="noopener noreferrer" className="group inline-block">
       <div className="bg-primary-light/10 dark:bg-primary-dark/20 backdrop-blur-sm text-white py-3 px-8 rounded-full inline-flex items-center gap-3 transition-all duration-300 group-hover:bg-primary-light/20 dark:group-hover:bg-primary-dark/30 animate-border relative overflow-hidden">
         <span className="font-bold text-lg">
-          Earthfast raised{" "}
+          We raised{" "}
           <span className="text-primary-light dark:text-primary-dark font-extrabold text-xl">
             $1.4M
           </span>{" "}
-          funding
+          in pre-seed funding
         </span>
         <span className="text-primary-light/50 dark:text-primary-dark/50">
           •
