@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script'
 import { Inter } from "next/font/google";
 import cx from "classnames";
 import "./globals.css";
@@ -25,6 +26,26 @@ export const metadata: Metadata = {
   },
 };
 
+const GoogleAnalytics = () => {
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=G-BSQCMSBHLG`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-BSQCMSBHLG');
+        `}
+      </Script>
+    </>
+  )
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +55,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <GoogleAnalytics />
       </head>
       <body
         className={cx(
