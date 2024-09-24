@@ -121,7 +121,7 @@ function AnnouncementBanner() {
         <span className="font-bold text-lg">
           Earthfast raised{" "}
           <span className="text-primary-light dark:text-primary-dark font-extrabold text-xl">
-            $0M
+            $1.4M
           </span>{" "}
           funding
         </span>
