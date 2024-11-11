@@ -25,8 +25,22 @@ function Header() {
         />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
+      <nav className="hidden md:flex gap-14">
+        <Link href="https://blog.earthfast.com" className="text-title-light dark:text-title-dark">
+          Blog
+        </Link>
+        <Link href="https://docs.earthfast.com" className="text-title-light dark:text-title-dark">
+          Docs
+        </Link>
+      </nav>
       <div className="flex items-center space-x-4">
-        <Button variant="inverted" className="leading-3 !py-3 font-bold" href="https://dashboard.earthfast.com" target="_blank" rel="noopener noreferrer">
+        <Button
+          variant="inverted"
+          className="leading-3 !py-3 font-bold"
+          href="https://dashboard.earthfast.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Get Started
         </Button>
       </div>
@@ -70,20 +84,17 @@ function HeaderWithMobileAndButtons() {
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
       <nav className="hidden md:flex gap-14">
-        <Link href="/" className="text-title-light dark:text-title-dark">
-          Solution
+        <Link href="https://blog.earthfast.com" className="text-title-light dark:text-title-dark">
+          Blog
         </Link>
-        <Link href="/" className="text-title-light dark:text-title-dark">
-          Resource
-        </Link>
-        <Link href="/" className="text-title-light dark:text-title-dark">
-          Company
+        <Link href="https://docs.earthfast.com" className="text-title-light dark:text-title-dark">
+          Docs
         </Link>
       </nav>
       <div className="hidden md:flex items-center space-x-4">
-        <Button href="/" variant="text">
+        {/* <Button href="/" variant="text">
           Login
-        </Button>
+        </Button> */}
         <Button href="/" variant="inverted" className="leading-3 !py-3">
           Get Started
         </Button>
@@ -129,26 +140,20 @@ function HeaderWithMobileAndButtons() {
         </button>
         <nav className="flex flex-col items-center space-y-4 mt-16">
           <Link
-            href="/"
+            href="https://blog.earthfast.com"
             className="text-title-light dark:text-title-dark text-lg"
           >
-            Solution
+            Blog
           </Link>
           <Link
-            href="/"
+            href="https://docs.earthfast.com"
             className="text-title-light dark:text-title-dark text-lg"
           >
-            Resource
+            Docs
           </Link>
-          <Link
-            href="/"
-            className="text-title-light dark:text-title-dark text-lg"
-          >
-            Company
-          </Link>
-          <Button href="/" variant="text">
+          {/* <Button href="/" variant="text">
             Login
-          </Button>
+          </Button> */}
           <Button href="/" variant="inverted" className="leading-3 !py-3">
             Get Started
           </Button>
@@ -158,4 +163,4 @@ function HeaderWithMobileAndButtons() {
   );
 }
 
-export default Header;
+export default HeaderWithMobileAndButtons;
