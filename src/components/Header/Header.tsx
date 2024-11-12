@@ -83,15 +83,21 @@ function HeaderWithMobileAndButtons() {
         />
         <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
       </Link>
-      <nav className="hidden md:flex gap-14">
-        <Link href="https://blog.earthfast.com" className="text-title-light dark:text-title-dark">
-          Blog
-        </Link>
-        <Link href="https://docs.earthfast.com" className="text-title-light dark:text-title-dark">
-          Docs
-        </Link>
-      </nav>
       <div className="hidden md:flex items-center space-x-4">
+        <nav className="hidden md:flex gap-10 mr-6">
+          <Link
+            href="https://blog.earthfast.com"
+            className="text-title-light dark:text-title-dark"
+          >
+            Blog
+          </Link>
+          <Link
+            href="https://docs.earthfast.com"
+            className="text-title-light dark:text-title-dark"
+          >
+            Docs
+          </Link>
+        </nav>
         {/* <Button href="/" variant="text">
           Login
         </Button> */}
