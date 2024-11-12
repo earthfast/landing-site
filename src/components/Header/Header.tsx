@@ -85,12 +85,12 @@ function HeaderWithMobileAndButtons() {
       </Link>
       <div className="hidden md:flex items-center space-x-4">
         <nav className="hidden md:flex gap-10 mr-6">
-          <Link
+          {/* <Link
             href="https://blog.earthfast.com"
             className="text-title-light dark:text-title-dark"
           >
             Blog
-          </Link>
+          </Link> */}
           <Link
             href="https://docs.earthfast.com"
             className="text-title-light dark:text-title-dark"
@@ -145,12 +145,12 @@ function HeaderWithMobileAndButtons() {
           <FiX className="h-6 w-6" />
         </button>
         <nav className="flex flex-col items-center space-y-4 mt-16">
-          <Link
+          {/* <Link
             href="https://blog.earthfast.com"
             className="text-title-light dark:text-title-dark text-lg"
           >
             Blog
-          </Link>
+          </Link> */}
           <Link
             href="https://docs.earthfast.com"
             className="text-title-light dark:text-title-dark text-lg"
