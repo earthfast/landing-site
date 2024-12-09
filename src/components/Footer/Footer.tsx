@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { FaTwitter, FaGithub, FaTelegram } from "react-icons/fa";
+import { FaGithub, FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -39,14 +40,14 @@ function Footer() {
       <FaTelegram size={28} className="hidden dark:block" />
     </a> */}
             <a
-              href="https://x.com/EarthFastHQ"
+              href="https://x.com/EarthFast"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="relative after:content-[''] after:absolute after:w-full after:h-full after:bg-white-light-mask after:bottom-[-5px]">
-                <FaTwitter size={28} color="#2E93FF" className="dark:hidden" />
+                <FaXTwitter size={28} color="#2E93FF" className="dark:hidden" />
               </div>
-              <FaTwitter size={28} className="hidden dark:block" />
+              <FaXTwitter size={28} className="hidden dark:block" />
             </a>
             <a
               href="https://github.com/earthfast"
