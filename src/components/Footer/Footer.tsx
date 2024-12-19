@@ -58,7 +58,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-end">
+        <div className="flex flex-col items-center sm:items-end">
         <div className="">
             <a href="mailto:contact@earthfast.com">contact@earthfast.com</a>
           </div>
