@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
     <>
-      <footer className="max-w-wrapper mx-auto py-10 flex flex-col gap-8 mt-9">
+      <footer className="max-w-wrapper mx-auto py-10 flex flex-col gap-1 mt-9">
         <div className="flex justify-between items-center w-full flex-col sm:flex-row gap-8">
           <div className="flex items-center gap-3">
             <Image
@@ -23,9 +23,6 @@ function Footer() {
               className="hidden dark:block"
             />
             <h1 className="font-bold text-lg sm:text-2xl text-">EarthFast</h1>
-          </div>
-          <div className="">
-            <a href="mailto:contact@earthfast.com">contact@earthfast.com</a>
           </div>
 
           <div className="flex items-center gap-8">
@@ -61,7 +58,16 @@ function Footer() {
             </a>
           </div>
         </div>
+        <div className="flex flex-col items-end">
+        <div className="">
+            <a href="mailto:contact@earthfast.com">contact@earthfast.com</a>
+          </div>
+        </div>
       </footer>
+      <div className="flex gap-4 text-sm items-center justify-center">
+        <a href="https://s3.us-east-1.amazonaws.com/earthfast.com-docs/Privacy+Policy.pdf" target="_blank" className="hover:underline">Privacy Policy</a>
+        <a href="https://s3.us-east-1.amazonaws.com/earthfast.com-docs/Terms+Of+Use.pdf" target="_blank" className="hover:underline">Terms of Use</a>
+      </div>
       <div className="flex w-full text-[11px] dark:text-body-dark items-center justify-center">
         <p className=" text-center px-4 pb-2">
           Need to report a copyright or compliance violations? Email{" "}
