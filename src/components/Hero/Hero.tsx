@@ -54,7 +54,7 @@ function Hero() {
         </div>
         <div className="flex items-center justify-center sm:justify-between gap-10 max-w-[45.875rem] mx-auto pr-2 sm:pr-5">
           <Link
-            href="https://app.audius.co"
+            href="https://dashboard.audius.org"
             target="_blank"
             rel="noopener noreferrer"
             className="dark:hidden max-w-20 sm:max-w-40"
@@ -62,7 +62,7 @@ function Hero() {
             <Image src="/audius.png" width={150} height={31} alt="Audius" />
           </Link>
           <Link
-            href="https://app.audius.co"
+            href="https://dashboard.audius.org"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden dark:block max-w-20 sm:max-w-40"
