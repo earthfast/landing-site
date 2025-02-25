@@ -6,7 +6,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { useState, useEffect } from "react";
 
 const NAVIGATION_LINKS = [
-  // { href: "https://blog.earthfast.com", label: "Blog" }, // Commented out but kept for future
+  { href: "https://blog.earthfast.com", label: "Blog" },
   { href: "https://docs.earthfast.com", label: "Docs" },
 ];
 
