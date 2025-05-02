@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 const NAVIGATION_LINKS = [
   { href: "https://blog.earthfast.com", label: "Blog" },
   { href: "https://docs.earthfast.com", label: "Docs" },
+  { href: "https://dashboard.earthfast.com/project-showcase", label: "Project Showcase" },
 ];
 
 // Reusable Logo component
@@ -39,6 +40,7 @@ const NavigationLinks = ({ className = "" }) => (
         key={href}
         href={href}
         className="text-title-light dark:text-title-dark text-lg"
+        target="_blank"
       >
         {label}
       </Link>
